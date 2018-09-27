@@ -17,3 +17,9 @@ nav a{
    padding: 3px;
    margin: 4px;
 }
+
+.currentPage{
+   border-width: 10px;
+   font-weight: bold;
+   background-color: red;
+}
