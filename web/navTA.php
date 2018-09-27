@@ -3,8 +3,8 @@
       <nav>
          <h1>BATMAN BRAWLERS INC.</h1><br/>
          <?php 
-            $home = "homeTA.php"
-            echo "<a href='$home'>HOME</a>";
+   
+            echo "<a href='homeTA" . ".php'>HOME</a>";
 
 
          ?>
