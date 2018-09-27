@@ -10,6 +10,8 @@
 
 
    <body>
+      <header>THIS IS MY HOME PAGE</header>
+      <?php    //add php here?>
       <ul>
          <li><a href="hello.html">To Be continued</a></li>
          <li><a href="hello.html">To Be continued</a></li>
