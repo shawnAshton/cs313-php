@@ -8,3 +8,9 @@ nav{
    border-color: red;
    border-radius: 5px;
 }
+
+nav a{
+   border:solid;
+   border-color: red;
+   padding: 3px;
+}
