@@ -10,9 +10,10 @@
 
 
    <body>
-
       <?php
          include 'navTA.php';
       ?>
-
+      <p> We work in coordination with the Dark Knight. As the underground vigilante crew,
+       we protect your streets and nightclubs. Our mission is to help Batman in your 
+      local area. Join us now!</p>
    </body>
