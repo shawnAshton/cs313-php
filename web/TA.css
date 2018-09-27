@@ -5,12 +5,14 @@ nav{
    padding: 10px;
    background-color: lightgray;
    border:solid;
-   border-color: red;
+   border-color: darkblue;
    border-radius: 5px;
 }
 
 nav a{
    border:solid;
-   border-color: red;
+   border-color: darkblue;
+   border-radius: 5px;
    padding: 3px;
+   margin: 4px;
 }
