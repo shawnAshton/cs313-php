@@ -29,8 +29,11 @@
          </div>
          <img src="StewartFalls.jpg" alt="family picture">
          <div>
-            <p> I love teasing my nieces as We walk.</p><br/>
-            
+            <hr>
+            <h3>Who am I?</h3>
+            <p>I am shawn and a computer science major.</p><br/>
+            <p>I attend BYU-I</p>
+
          </div>
       </div>
    </body>
