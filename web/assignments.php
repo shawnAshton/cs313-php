@@ -29,4 +29,6 @@
          <li><a href="hello.html">To Be continued</a></li>
          <li><a href="hello.html">To Be continued</a></li>
       </ul>
+
+      <img src="Stewart Falls.jpg" alt="family picture">
    </body>
