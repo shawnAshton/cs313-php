@@ -24,4 +24,9 @@
          ?>
           href="assignments.php">ASSIGNMENTS</a> 
 
+
+         <br/>
+         <?php
+            echo "Today is " . date("Y/m/d") . "<br>";
+         ?>
       </nav>
