@@ -44,5 +44,7 @@ nav{
    color: black;
    border-radius: 4px;
    background-color: lime;
+   padding: 5px;
+   margin: 10px;
    font-weight: bold;
 }
