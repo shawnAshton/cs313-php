@@ -14,6 +14,8 @@
       <?php
          include 'nav.php';
       ?>
+      <br>
+      <br>
       <ul>
          <li><a href="hello.html">To Be continued</a></li>
          <li><a href="hello.html">To Be continued</a></li>
