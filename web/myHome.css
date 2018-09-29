@@ -1,7 +1,9 @@
 header{
-   background-color: lightgray;
+   background-color: gray;
    border-style: solid;
    border-bottom: none;
+   border-left: none;
+   border-right: none;
    border-color: black;
    text-align: center;
    font-family: cursive, sans-serif;
