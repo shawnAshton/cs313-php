@@ -15,6 +15,6 @@
          include 'nav.php';
       ?>
       <br>
-      <img src="Stewart Falls.jpg" alt="family picture">
+      <img src="StewartFalls.jpg" alt="family picture">
 
    </body>
