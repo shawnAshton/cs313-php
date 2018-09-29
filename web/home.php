@@ -15,7 +15,7 @@
          include 'nav.php';
       ?> 
       <br>
-      <div class="col2Grid, center">
+      <div class="col2Grid">
          <img src="StewartFalls.jpg" alt="family picture">
          <p>This is my family</p>
       </div>
