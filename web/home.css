@@ -1,11 +1,10 @@
 header{
-   background-color: lightblue;
+   background-color: blue;
    text-align: center;
    font-family: cursive, sans-serif;
    width: 50%;
    padding: 5px;
-   margin: 0px;
-   border: 0px;
+
 }
 
 body{
@@ -17,12 +16,4 @@ ul{
  list-style-position: inside;
  list-style: none;
  
-}
-
-footer{
-   background-color: rgb(246,219,70);
-   text-align: center;
-   font-family: cursive, sans-serif;
-   width: 100%;
-   padding: 5px;
 }
