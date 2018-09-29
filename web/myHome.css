@@ -24,8 +24,15 @@ ul{
  
 }
 
+nav{
+   text-align: center;
+   border-color: black;
+   border-style: solid;
+   background-color: gray;
+}
+
 .currentPage{
    border-width: 10px;
    font-weight: bold;
-   background-color: red;
+   background-color: powderblue;
 }

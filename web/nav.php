@@ -1,12 +1,9 @@
 
 
       <nav>
-         <h1>BATMAN BRAWLERS INC.</h1><br/>
          <?php 
             $file = basename($_SERVER["SCRIPT_FILENAME"], '.php');
          ?>
-
-
 
 
          <a
