@@ -41,18 +41,16 @@
 
 
 
-<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32">
-
 
 <script>
 function bigImg(x) {
     x.style.height = "auto";
-    x.style.width = "90";
+    x.style.width = "1200px";
 }
 
 function normalImg(x) {
     x.style.height = "auto";
-    x.style.width = "80%";
+    x.style.width = "800px";
 }
 </script>
 
