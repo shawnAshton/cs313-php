@@ -27,6 +27,6 @@
 
          <br/><br/><br/>
          <?php
-            echo "Today is " . date("Y/m/d") . "<br>";
+            echo "Today is "  . date("1") . ", the " . date("d") . "<br>";
          ?>
       </nav>
