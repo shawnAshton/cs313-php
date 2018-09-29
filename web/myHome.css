@@ -28,6 +28,8 @@ nav{
    text-align: center;
    border-color: black;
    width: 100%;
+   border-left: none;
+   border-right: none;
    border-style: solid;
    border-top: none;
    background-color: gray;
@@ -36,5 +38,4 @@ nav{
 .currentPage{
    border-width: 10px;
    font-weight: bold;
-   background-color: powderblue;
 }
