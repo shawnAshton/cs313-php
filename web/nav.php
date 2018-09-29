@@ -6,6 +6,8 @@
          ?>
 
 
+
+
          <a
 
          <?php 
@@ -15,11 +17,11 @@
          
          href="home.php">HOME</a> 
 
-<!--          <a
+         <a
          <?php 
-         if($file === 'about-usTA') 
+         if($file === 'assignments') 
             echo "class='currentPage'";
          ?>
-          href="about-usTA.php">ABOUT US</a> -->
+          href="assignments.php">ASSIGNMENTS</a> 
 
       </nav>
