@@ -13,7 +13,7 @@
       <header>THIS IS MY HOME PAGE!</header>
       <?php
          include 'nav.php';
-      ?>
+      ?> 
       <br>
       <div class="center, colGrid2">
          <img src="StewartFalls.jpg" alt="family picture">
