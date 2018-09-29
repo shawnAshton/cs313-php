@@ -2,7 +2,7 @@
 <htnl lang = "en">
    <head>  
       <meta charset="utf-8">
-      <link rel="stylesheet" type="text/css" href="">
+      <link rel="stylesheet" type="text/css" href="home.css">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Shawn's Home Page!</title>
       <script></script>
