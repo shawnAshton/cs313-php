@@ -31,8 +31,10 @@
          <div>
             <hr>
             <h3>Who am I?</h3>
-            <p>I am shawn and a computer science major.</p><br/>
-            <p>I attend BYU-I</p>
+            <p>I am Shawn</p><br/>
+            <p>computer science major.</p><br/>
+            <p>I attend BYU-I</p><br/>
+            <p>I enjoy burritos</p><br/>
 
          </div>
       </div>
