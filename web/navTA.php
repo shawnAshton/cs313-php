@@ -10,10 +10,12 @@
 
 
          <a
+
          <?php 
          if($file === 'homeTA') 
             echo "class='currentPage'";
          ?>
+         
          href="homeTA.php">HOME</a> 
 
          <a
