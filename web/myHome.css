@@ -1,5 +1,8 @@
 header{
-   background-color: blue;
+   background-color: lightgray;
+   border-style: solid;
+   border-bottom: none;
+   border-color: black;
    text-align: center;
    font-family: cursive, sans-serif;
    width: 100%;
