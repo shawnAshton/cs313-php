@@ -25,7 +25,7 @@
           href="assignments.php">ASSIGNMENTS</a> 
 
 
-         <br/><br/><br/>
+         <br/>
          <?php
             echo "Today is "  . date("l");
             echo ", in the great year of our lord, ". date("Y") . "<br>";
