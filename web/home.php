@@ -45,12 +45,12 @@
 <script>
 function bigImg(x) {
     x.style.height = "auto";
-    x.style.width = "1200px";
+    x.style.width = "100%";
 }
 
 function normalImg(x) {
     x.style.height = "auto";
-    x.style.width = "800px";
+    x.style.width = "60%";
 }
 </script>
 
