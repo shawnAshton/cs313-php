@@ -23,6 +23,8 @@
             <li><h3>This is my Family!</h3></li>
             <li><p>This is when we went hiking and enjoyed 
             our time sitting on the rocks</p></li>
+            <li><p>I love hiking and teasing my nieces and nephews
+               while I walk.</p></li>
             </ul>
          </div>
       </div>
