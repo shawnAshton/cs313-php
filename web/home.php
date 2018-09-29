@@ -17,6 +17,13 @@
       <br>
       <div class="col2Grid">
          <img src="StewartFalls.jpg" alt="family picture">
-         <p>This is my family</p>
+         <div>
+            <hr>
+            <ul>
+            <li><h3>This is my Family!</h3></li>
+            <li><p>This is when we went hiking and enjoyed 
+            our time sitting on the rocks</p></li>
+            </ul>
+         </div>
       </div>
    </body>
