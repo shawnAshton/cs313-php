@@ -24,10 +24,6 @@ ul{
  
 }
 
-a{
-   border-style: solid;
-   border-color:red;
-}
 
 nav{
    background-color: lightgray;
@@ -43,6 +39,7 @@ nav{
 }
 
 .currentPage{
-   border-width: 10px;
+   border-style: solid;
+   border-color: red;
    font-weight: bold;
 }
