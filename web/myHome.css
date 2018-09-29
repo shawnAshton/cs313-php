@@ -35,16 +35,17 @@ nav{
    text-align: center;
    font-family: cursive, sans-serif;
    width: 100%;
-   padding: 15px;
+   padding: 5px;
 }
 
 .currentPage{
    border-style: solid;
    border-color: black;
-   color: black;
+   color: white;
    border-radius: 4px;
    background-color: lime;
    padding: 5px;
    margin: 5px;
+   background-color: #4CAF50;
    font-weight: bold;
 }
