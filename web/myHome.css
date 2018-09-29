@@ -23,3 +23,9 @@ ul{
  list-style: none;
  
 }
+
+.currentPage{
+   border-width: 10px;
+   font-weight: bold;
+   background-color: red;
+}
