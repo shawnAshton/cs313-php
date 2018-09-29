@@ -27,6 +27,6 @@
 
          <br/><br/><br/>
          <?php
-            echo "Today is "  . date("1") . ", the " . date("d") . "<br>";
+            echo "Today is "  . date("1") . ", in the great year of ". date("Y") . "<br>";
          ?>
       </nav>
