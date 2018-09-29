@@ -24,6 +24,11 @@ ul{
  
 }
 
+a{
+   border-spacing: solid;
+   border-color:red;
+}
+
 nav{
    background-color: lightgray;
    border-style: solid;
