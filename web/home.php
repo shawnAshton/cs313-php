@@ -27,7 +27,7 @@
                while I walk.</p></li>
             </ul>
          </div>
-         <img src="StewartFalls.jpg" alt="family picture">
+         <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="StewartFalls.jpg" alt="family picture">
          <div>
             <hr>
             <h3>Who am I?</h3>
@@ -38,4 +38,23 @@
 
          </div>
       </div>
+
+
+
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32">
+
+
+<script>
+function bigImg(x) {
+    x.style.height = "auto";
+    x.style.width = "90";
+}
+
+function normalImg(x) {
+    x.style.height = "auto";
+    x.style.width = "80%";
+}
+</script>
+
+
    </body>
