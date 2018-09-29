@@ -70,6 +70,12 @@ header{
    grid-template-columns: 50% 50%
 }
 
+.col3Grid{
+   display: grid;
+   grid-column-gap: 1em;
+   grid-template-columns: 30% 40% 30%
+}
+
 img, hr{
    width: 80%;
    height:auto;
