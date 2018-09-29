@@ -41,7 +41,8 @@ nav{
 .currentPage{
    border-style: solid;
    border-color: black;
-   border-radius: 10px;
-   background-color: yellow;
+   color: black;
+   border-radius: 4px;
+   background-color: lime;
    font-weight: bold;
 }
