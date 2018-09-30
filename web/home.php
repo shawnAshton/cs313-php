@@ -31,10 +31,11 @@
          <div>
             <hr>
             <h3>Who am I?</h3>
-            <p>I am Shawn</p>
+            <p>I am Shawn.</p>
             <p>I am a computer science major.</p>
-            <p>I attend BYU-I</p>
-            <p>I enjoy burritos</p>
+            <p>I attend BYU-I.</p>
+            <p>I enjoy burritos.</p>
+            <p>I enjoy starcraft 2</p>
 
          </div>
       </div>
