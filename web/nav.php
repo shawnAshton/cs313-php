@@ -28,7 +28,7 @@
          <br/><br/>
          <?php
             echo "Today is "  . date("l");
-            echo ", in the great year of our lord, ". date("Y") . "<br>
-            wherever the Heroku server is located";
+            echo ", in the great year of our Lord, ". date("Y") . "<br>
+            wherever the Heroku server is located.";
          ?>
       </nav>
