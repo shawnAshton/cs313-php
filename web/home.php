@@ -50,7 +50,7 @@ function bigImg(x) {
 
 function normalImg(x) {
     x.style.height = "auto";
-    x.style.width = "60%";
+    x.style.width = "80%";
 }
 </script>
 

@@ -28,6 +28,7 @@
          <br/><br/>
          <?php
             echo "Today is "  . date("l");
+            echo date("l jS \of F Y h:i:s A") . "<br>";
             echo ", in the great year of our lord, ". date("Y") . "<br>";
          ?>
       </nav>
