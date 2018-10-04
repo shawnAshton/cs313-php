@@ -1,5 +1,13 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
 <?php
-setcookie("fav-text", "c is for cookie", time() + (86400 * 7));
+// setcookie("fav-text", "c is for cookie", time() + (86400 * 7));
 session_start();
 $count = 0;
 if (isset($_SESSION["count"])){
@@ -11,9 +19,7 @@ if (isset($_SESSION["count"])){
 ?>
 
 
-<!DOCTYPE html>
-<html>
-<head>
+
    <title></title>
 </head>
 <body>
