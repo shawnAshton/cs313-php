@@ -11,7 +11,7 @@
 session_start();
 $count = 1;
 if (isset($_SESSION["count"])){
-   $_SESSION["count"]++; 
+   $_SESSION["count"]++
 }else{
    $_SESSION["count"] = $count;
 }
