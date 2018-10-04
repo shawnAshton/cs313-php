@@ -13,7 +13,7 @@ $count = 1;
 if (isset($_SESSION["count"])){
    $_SESSION["count"]++; 
 }else{
-   $_SSSION["count"] = $count;
+   $_SESSION["count"] = $count;
 }
 
 ?>
