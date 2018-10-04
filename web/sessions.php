@@ -23,6 +23,6 @@ if (isset($_SESSION["count"])){
    <title></title>
 </head>
 <body>
-<p>this is how many times you visited: <?php echo $_SESSION["count"]?></p>
+<p>this is how many times you visited: <?php echo $SESSION["count"]?></p>
 </body>
 </html>
