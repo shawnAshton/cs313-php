@@ -9,9 +9,9 @@
 <?php
 // setcookie("fav-text", "c is for cookie", time() + (86400 * 7));
 session_start();
-$count = 0;
+$count = 1;
 if (isset($_SESSION["count"])){
-   $_SESSION["count"] = $_SESSION["count"]++; 
+   $_SESSION["count"]++; 
 }else{
    $_SESSION["count"] = $count;
 }
