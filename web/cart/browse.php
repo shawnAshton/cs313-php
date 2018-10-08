@@ -12,18 +12,18 @@
 </head>
 <body>
    <div id="demo"></div>
-   <script>
-   function updateSessions() {
-     var xhttp = new XMLHttpRequest();
-     xhttp.onreadystatechange = function() {
-       if (this.readyState == 4 && this.status == 200) {
-          document.getElementById("demo").innerHTML = this.responseText;
-       }
-     };
-     xhttp.open("POST", "update.php", true);
-     xhttp.send();
-   }
+
+
+   <script type="text/javascript">
+      function check(){
+         var selected = new Array();
+         $("input:checkbox[name=purchase[]]:checked").each(function(){
+             selected.push($(this).val());
+             document.write(selected);
+         });
+      }
    </script>
+
 
    <form action="cart.php" method="post">
       <input type="checkbox" name="purchase[]" value="apple">Apple<br>
@@ -34,8 +34,22 @@
       <input type="checkbox" name="purchase[]" value="Small hot dog">Small hot dog<br>
       <input type="checkbox" name="purchase[]" value="Rasberry Pie">Rasberry Pie<br>
       <input type="checkbox" name="purchase[]" value="lollipop">lollipop<br>
-      <button type="button" onclick="updateSessions()">Change Content</button>
+      <button type="button" onclick="check()">Change Content</button>
       <input type="submit" value="Cart">
    </form>
 </body>
 </html>
+
+
+<!--    <script>
+   function updateSessions() {
+     var xhttp = new XMLHttpRequest();
+     xhttp.onreadystatechange = function() {
+       if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("demo").innerHTML = this.responseText;
+       }
+     };
+     xhttp.open("POST", "update.php", true);
+     xhttp.send();
+   }
+   </script> -->
