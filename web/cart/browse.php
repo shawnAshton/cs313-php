@@ -34,7 +34,7 @@
       <input type="checkbox" name="purchase[]" value="Small hot dog">Small hot dog<br>
       <input type="checkbox" name="purchase[]" value="Rasberry Pie">Rasberry Pie<br>
       <input type="checkbox" name="purchase[]" value="lollipop">lollipop<br>
-      <button type="button" onclick="updateSessions()>update</button>
+      <button type="button" onclick="updateSessions()">Change Content</button>
       <input type="submit" value="Cart">
    </form>
 </body>
