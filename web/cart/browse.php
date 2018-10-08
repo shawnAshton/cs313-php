@@ -12,21 +12,7 @@
 </head>
 <body>
    <div id="demo"></div>
-
-<script type="text/javascript">
-   var selected = new Array();
-
-   $(document).ready(function() {
-
-     $("input:checkbox[name=purchase[]]:checked").each(function() {
-          selected.push($(this).val());
-     });
-
-   });
-
-</script>
-
-
+   <h1>BUY SOME OF THESE</h1><br>
    <form action="cart.php" method="post">
       <input type="checkbox" name="purchase[]" value="apple">Apple<br>
       <input type="checkbox" name="purchase[]" value="Banana">Banana<br>
@@ -69,3 +55,19 @@
          });
       }
    </script> -->
+
+
+
+
+<!-- <script type="text/javascript">
+   var selected = new Array();
+
+   $(document).ready(function() {
+
+     $("input:checkbox[name=purchase[]]:checked").each(function() {
+          selected.push($(this).val());
+     });
+
+   });
+
+</script>
