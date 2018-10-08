@@ -29,7 +29,7 @@
                  
                  if(($count == 1) && ($oneOrLess == false)){
                     echo "<br>and,";
-                    echo "<br>a $purchase";
+                    echo "<br>a $purchase<br><br>";
                  }else{
                     echo "<br>$purchase";
                  }
