@@ -13,10 +13,20 @@
     
         <?php 
         $count = sizeof($_POST["purchase"]);
+        $oneOrLess = false;
+        if ($count <= 1){
+            $oneOrLess = true;
+        }else{
+            $oneOrLess = false;
+        }
         echo "you have picked: $count items";
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 foreach($_POST["purchase"] as $purchase){
-                    echo "<br>You have picked $purchase";
+                     $count--;
+                     if(($count == 1) && ($oneOrLess == false)){
+                        echo "and<br>";
+                     }
+                     echo "<br>You have picked $purchase";
                 }
             }
         ?>
