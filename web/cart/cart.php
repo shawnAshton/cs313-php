@@ -43,6 +43,10 @@
         ?>
  
      </section>
+<a href="browse.php">want to browse more?</a>.
+<a href="checkout">checkout</a>
+
+
     
 </body>
 </html>
