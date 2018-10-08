@@ -13,16 +13,18 @@
 <body>
    <div id="demo"></div>
 
+<script type="text/javascript">
+   var selected = new Array();
 
-   <script type="text/javascript">
-      function check(){
-         var selected = new Array();
-         $("input:checkbox[name=purchase[]]:checked").each(function(){
-             selected.push($(this).val());
-             document.getElementById("demo").innerHTML = selected;
-         });
-      }
-   </script>
+   $(document).ready(function() {
+
+     $("input:checkbox[name=purchase[]]:checked").each(function() {
+          selected.push($(this).val());
+     });
+
+   });
+
+</script>
 
 
    <form action="cart.php" method="post">
@@ -34,8 +36,8 @@
       <input type="checkbox" name="purchase[]" value="Small hot dog">Small hot dog<br>
       <input type="checkbox" name="purchase[]" value="Rasberry Pie">Rasberry Pie<br>
       <input type="checkbox" name="purchase[]" value="lollipop">lollipop<br>
-      <button type="button" onclick="check()">Change Content</button>
-      <input type="submit" value="Cart">
+      <!-- <button type="button" onclick="check()">Change Content</button> -->
+      <input type="submit" value="Cart update">
    </form>
 </body>
 </html>
@@ -52,4 +54,18 @@
      xhttp.open("POST", "update.php", true);
      xhttp.send();
    }
+   </script> -->
+
+
+
+
+
+<!--    <script type="text/javascript">
+      function check(){
+         var selected = new Array();
+         $("input:checkbox[name=purchase[]]:checked").each(function(){
+             selected.push($(this).val());
+             document.getElementById("demo").innerHTML = selected;
+         });
+      }
    </script> -->
