@@ -12,6 +12,7 @@
     <section>
     
         <?php 
+        session_start();
         $count = sizeof($_POST["purchase"]);
         $oneOrLess = false;
         if ($count <= 1){
@@ -26,6 +27,7 @@
         }
         
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
+               $_SESSION["purchase"] = $_POST["purchase"]
                 foreach($_POST["purchase"] as $purchase){
                      
                      if(($count == 1) && ($oneOrLess == false)){
