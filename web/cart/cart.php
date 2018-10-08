@@ -32,7 +32,7 @@
                         echo "<br>and,";
                         echo "<br>a $purchase";
                      }else{
-                        echo "<br>a $purchase";
+                        echo "<br>$purchase";
                      }
                      
                      $count--;
