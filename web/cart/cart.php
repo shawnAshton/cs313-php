@@ -27,7 +27,7 @@
         }
         
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
-               $_SESSION["purchase"] = $_POST["purchase"]
+               $_SESSION["purchase"] = $_POST["purchase"];
                 foreach($_POST["purchase"] as $purchase){
                      
                      if(($count == 1) && ($oneOrLess == false)){
