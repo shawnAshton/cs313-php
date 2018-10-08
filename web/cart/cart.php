@@ -27,14 +27,14 @@
         }
         
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
-               $_SESSION["purchase"] = $_POST["purchase"];
-                foreach($_SESSION["purchase"] as $purchase){
+               $_SESSION["cart"] = $_POST["purchase"];
+                foreach($_SESSION["cart"] as $item){
                      
                      if(($count == 1) && ($oneOrLess == false)){
                         echo "<br>and,";
-                        echo "<br>a $purchase<br><br>";
+                        echo "<br>a $item<br><br>";
                      }else{
-                        echo "<br>$purchase";
+                        echo "<br>$item";
                      }
                      
                      $count--;
