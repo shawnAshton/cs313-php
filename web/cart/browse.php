@@ -15,7 +15,7 @@
       <input type="checkbox" name="purchase[]" value="apple">Apple<br>
       <input type="checkbox" name="purchase[]" value="Banana">Banana<br>
       <input type="checkbox" name="purchase[]" value="Curry">Curry<br>
-      <input type="checkbox" name="purchase[]" value="Chicke">Chicken<br>
+      <input type="checkbox" name="purchase[]" value="Chicken">Chicken<br>
       <input type="checkbox" name="purchase[]" value="French frie">French frie<br>
       <input type="checkbox" name="purchase[]" value="Small hot dog">Small hot dog<br>
       <input type="checkbox" name="purchase[]" value="Rasberry Pie">Rasberry Pie<br>
