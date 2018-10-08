@@ -43,8 +43,8 @@
         ?>
  
      </section>
-<a href="browse.php">want to browse more?</a>.
-<a href="checkout">checkout</a>
+<a href="browse.php">want to browse more?</a><br>
+<a href="checkout.php">checkout</a>
 
 
     
