@@ -19,7 +19,7 @@
          var selected = new Array();
          $("input:checkbox[name=purchase[]]:checked").each(function(){
              selected.push($(this).val());
-             document.write(selected);
+             document.write("hello");
          });
       }
    </script>
