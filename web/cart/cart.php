@@ -22,11 +22,12 @@
         echo "you have picked: $count items";
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 foreach($_POST["purchase"] as $purchase){
-                     $count--;
+                     
                      if(($count == 1) && ($oneOrLess == false)){
-                        echo "and<br>";
+                        echo "<br>and";
                      }
                      echo "<br>You have picked $purchase";
+                     $count--;
                 }
             }
         ?>
