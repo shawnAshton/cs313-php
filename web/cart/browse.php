@@ -32,6 +32,7 @@ if (isset($_SESSION["count"])){
       <input type="checkbox" name="purchase[]" value="Rasberry Pie">Rasberry Pie<br>
       <input type="checkbox" name="purchase[]" value="Dog food">Dog food<br>
       <input type="checkbox" name="purchase[]" value="lollipo">lollipop<br>
+      <input type="submit">
    </form>
 <p>this is how many times you visited: <?php echo $_SESSION["count"]?></p>
 </body>
