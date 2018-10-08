@@ -2,14 +2,14 @@
 
 <html>
 <head>
-    <title>cart</title>
+    <title>Your Cart</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-    <h1 class="glow"> Result </h1>
+    <h1>Your Cart Results </h1>
 
-    <section id="main">
+    <section>
     
         <?php 
         $count = sizeof($_POST["purchase"]);
