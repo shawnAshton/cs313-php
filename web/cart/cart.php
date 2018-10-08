@@ -31,7 +31,7 @@
                      if(($count == 1) && ($oneOrLess == false)){
                         echo "<br>and";
                      }
-                     echo "<br>You have picked $purchase";
+                     echo "<br>$purchase";
                      $count--;
                 }
             }
