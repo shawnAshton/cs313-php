@@ -29,7 +29,7 @@
                 foreach($_POST["purchase"] as $purchase){
                      
                      if(($count == 1) && ($oneOrLess == false)){
-                        echo "<br>and,<br> a ";
+                        echo "<br>and,";
                      }
                      echo "<br>$purchase";
                      $count--;
