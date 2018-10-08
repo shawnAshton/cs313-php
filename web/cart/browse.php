@@ -23,6 +23,5 @@
       <input type="checkbox" name="purchase[]" value="lollipop">lollipop<br>
       <input type="submit">
    </form>
-<p>this is how many times you visited: <?php echo $_SESSION["count"]?></p>
 </body>
 </html>
