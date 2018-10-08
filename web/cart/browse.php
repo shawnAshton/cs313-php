@@ -12,7 +12,7 @@
 </head>
 <body>
    <div id="demo"></div>
-   <h1>BUY SOME OF THESE</h1><br>
+   <h1>BUY SOME OF THESE ITEMS</h1><br>
    <form action="cart.php" method="post">
       <input type="checkbox" name="purchase[]" value="apple">Apple<br>
       <input type="checkbox" name="purchase[]" value="Banana">Banana<br>
