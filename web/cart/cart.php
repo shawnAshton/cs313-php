@@ -19,13 +19,13 @@
         }else{
             $oneOrLess = false;
         }
-        foreach($_SESSION["cart"] as $item){
+        foreach($_SESSION["cart"] as $item => $amount){
              
              if(($count == 1) && ($oneOrLess == false)){
                 echo "<br>and,";
-                echo "<br>$item<br><br>";
+                echo "<br>$item X $amount<br><br>";
              }else{
-                echo "<br>$item";
+                echo "<br>$item X $amount";
              }
              $count--;
         }
