@@ -12,7 +12,7 @@
     <section>
     <?php
         session_start();
-        $count = sizeof($_SESSION["cart"]);
+        $count = sizeof($_SESSION["cart"]); 
         $oneOrLess = false;
         if ($count <= 1){
             $oneOrLess = true;
