@@ -35,7 +35,7 @@
        
  
     </section>
-<a href="browse.php">Browse More?</a><br>
+<a href="browse.php">Browse More</a><br><br>
 <a href="checkout.php">Checkout</a>
 
 
