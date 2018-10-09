@@ -29,7 +29,7 @@
                     echo "<br>$amount X $item"; 
                     echo '   <form action="cartUpdateSubtract.php" method="post">
                                 <input type="hidden" name="item" value="'. $item . '">'. $item . '<br>
-                                 <input type="submit" value="Remove and Item">
+                                 <input type="submit" value="Remove an Item">
                              </form>';
                  }
              }
