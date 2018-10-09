@@ -21,43 +21,43 @@
    <br>
    <form action="cartUpdate.php" method="post">
       <input type="hidden" name="purchase[]" value="apple">Apple<br>
-      <input type="submit" value="Cart update">
+      <input type="submit" value="Add To Cart">
    </form>
 
    <br>
    <form action="cartUpdate.php" method="post">
       <input type="hidden" name="purchase[]" value="Banana">Banana<br>
-      <input type="submit" value="Cart update">
+      <input type="submit" value="Add To Cart">
    </form>
 
    <br>
    <form action="cartUpdate.php" method="post">
       <input type="hidden" name="purchase[]" value="Curry Bowl">Curry Bowl<br>
-      <input type="submit" value="Cart update">
+      <input type="submit" value="Add To Cart">
    </form>
 
    <br>
    <form action="cartUpdate.php" method="post">
       <input type="hidden" name="purchase[]" value="Chicken">Chicken<br>
-      <input type="submit" value="Cart update">
+      <input type="submit" value="Add To Cart">
    </form>
 
    <br>
    <form action="cartUpdate.php" method="post">
       <input type="hidden" name="purchase[]" value="French fry">French fry<br>
-      <input type="submit" value="Cart update">
+      <input type="submit" value="Add To Cart">
    </form>
    
    <br>
    <form action="cartUpdate.php" method="post">
       <input type="hidden" name="purchase[]" value="Small hot dog">Small hot dog<br>
-      <input type="submit" value="Cart update">
+      <input type="submit" value="Add To Cart">
    </form>
 
    <br>
    <form action="cartUpdate.php" method="post">
       <input type="hidden" name="purchase[]" value="Rasberry Pie">Rasberry Pie<br>
-      <input type="submit" value="Cart update">
+      <input type="submit" value="Add To Cart">
    </form>
 
    <br>
