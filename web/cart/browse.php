@@ -1,17 +1,35 @@
-
-
 <?php
    session_start();
+
+   if (!isset($_SESSION["cart"])){
+
+      $_SESSION["cart"] = [
+      'Apple' => 0,
+      'Banana' => 0,
+      'Curry_Bowl' => 0,
+      'Chicken' => 0,
+      'French_Fry' => 0,
+      'Small_Hot_Dog' => 0
+
+
+
+
+      ]
+   }
+
+
+   //check if session array is not set..
+      //set it
+       // create associative array...
+
+   //
 ?>
 
+
 <!DOCTYPE html>
+
 <html>
 <head>
-
-
-
-
-
    <title>Shop</title>
 </head>
 <body>
@@ -20,53 +38,53 @@
 
    <br>
    <form action="cartUpdate.php" method="post">
-      <input type="hidden" name="purchase[]" value="apple">Apple<br>
+      <input type="hidden" name="item" value="Apple">Apple<br>
       <input type="submit" value="Add To Cart">
    </form>
 
    <br>
    <form action="cartUpdate.php" method="post">
-      <input type="hidden" name="purchase[]" value="Banana">Banana<br>
+      <input type="hidden" name="item" value="Banana">Banana<br>
       <input type="submit" value="Add To Cart">
    </form>
 
    <br>
    <form action="cartUpdate.php" method="post">
-      <input type="hidden" name="purchase[]" value="Curry Bowl">Curry Bowl<br>
+      <input type="hidden" name="item" value="Curry_Bowl">Curry Bowl<br>
       <input type="submit" value="Add To Cart">
    </form>
 
    <br>
    <form action="cartUpdate.php" method="post">
-      <input type="hidden" name="purchase[]" value="Chicken">Chicken<br>
+      <input type="hidden" name="item" value="Chicken">Chicken<br>
       <input type="submit" value="Add To Cart">
    </form>
 
    <br>
    <form action="cartUpdate.php" method="post">
-      <input type="hidden" name="purchase[]" value="French fry">French fry<br>
+      <input type="hidden" name="item" value="French_Fry">French Fry<br>
       <input type="submit" value="Add To Cart">
    </form>
    
    <br>
    <form action="cartUpdate.php" method="post">
-      <input type="hidden" name="purchase[]" value="Small hot dog">Small hot dog<br>
+      <input type="hidden" name="item" value="Small_Hot_Dog">Small Hot Dog<br>
       <input type="submit" value="Add To Cart">
    </form>
 
    <br>
    <form action="cartUpdate.php" method="post">
-      <input type="hidden" name="purchase[]" value="Rasberry Pie">Rasberry Pie<br>
+      <input type="hidden" name="item" value="Rasberry_Pie">Rasberry Pie<br>
       <input type="submit" value="Add To Cart">
    </form>
 
    <br>
    <form action="cartUpdate.php" method="post">
-      <input type="hidden" name="purchase[]" value="lollipop">lollipop<br>
-      <input type="submit" value="Cart update">
+      <input type="hidden" name="item" value="Lollipop">Lollipop<br>
+      <input type="submit" value="Add To Cart">
    </form>
 
-      
+   <a href="cart.php">Checkout</a>
 
 </body>
 </html>

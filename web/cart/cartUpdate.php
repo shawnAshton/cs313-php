@@ -1,16 +1,7 @@
-
-
-<html>
-<head>
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body>
-    <section>
         <?php 
-        header("location: browse.php");
-        session_start();
+           session_start();
+           $itemToAdd = $_POST["item"];
+           $_SESSION["cart"][$itemToAdd]++;
+           var_dump($_SESSION["cart"])
+           // header("location: browse.php");
         ?>
- 
-     </section>
-</body>
-</html>
