@@ -7,7 +7,7 @@
 </head>
 <body>
 
-    <h1>Your Cart Results </h1>
+    <h1>The Contents of Yor Cart</h1>
 
     <section>
     <?php

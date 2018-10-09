@@ -1,7 +1,6 @@
         <?php 
            session_start();
-           $itemToAdd = $_POST["item"];
-           $_SESSION["cart"][$itemToAdd]++;
+           $_SESSION["cart"][$_POST["item"]]++;
            //var_dump($_SESSION["cart"]);
            header("location: browse.php");
         ?>
