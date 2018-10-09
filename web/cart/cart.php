@@ -30,7 +30,7 @@
                     echo '   <form action="cartUpdateSubtract.php" method="post">
                                 <input type="hidden" name="item" value="' . $item . '">' . $item . '<br>
                                 <input type="submit" value="Add To Cart">
-                             </form>'
+                             </form>';
                  }
              }
              $count--;
