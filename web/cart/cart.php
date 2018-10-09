@@ -24,7 +24,7 @@
                  if(($count == 1) && ($oneOrLess == false)){
                     echo "<br>and,";
                     echo "<br>$amount X $item<br><br>";
-                    echo ""
+                 
                  }else{
                     echo "<br>$amount X $item";//add html forms to do opposite of browse
                  }
