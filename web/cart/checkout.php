@@ -17,7 +17,7 @@
         Enter zip code: <input type="text" name="zip"><br>
         <input type="submit" value="buy">
     </form>
-
+ <br><br><a href="cart.php">Go To Cart</a>
 
     
 </body>

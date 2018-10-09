@@ -16,13 +16,6 @@
 
       ];
    }
-
-
-   //check if session array is not set..
-      //set it
-       // create associative array...
-
-   //
 ?>
 
 
