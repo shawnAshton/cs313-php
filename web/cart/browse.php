@@ -50,7 +50,7 @@
 
    <br>
    <form action="cartUpdate.php" method="post">
-      <input type="hidden" name="item" value="Curry_Bowl">Curry Bowl<br>
+      <input type="hidden" name="item" value="Curry Bowl">Curry Bowl<br>
       <input type="submit" value="Add To Cart">
    </form>
 
@@ -62,19 +62,19 @@
 
    <br>
    <form action="cartUpdate.php" method="post">
-      <input type="hidden" name="item" value="French_Fry">French Fry<br>
+      <input type="hidden" name="item" value="French Fry">French Fry<br>
       <input type="submit" value="Add To Cart">
    </form>
    
    <br>
    <form action="cartUpdate.php" method="post">
-      <input type="hidden" name="item" value="Small_Hot_Dog">Small Hot Dog<br>
+      <input type="hidden" name="item" value="Small Hot Dog">Small Hot Dog<br>
       <input type="submit" value="Add To Cart">
    </form>
 
    <br>
    <form action="cartUpdate.php" method="post">
-      <input type="hidden" name="item" value="Rasberry_Pie">Rasberry Pie<br>
+      <input type="hidden" name="item" value="Rasberry Pie">Rasberry Pie<br>
       <input type="submit" value="Add To Cart">
    </form>
 

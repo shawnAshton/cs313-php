@@ -20,12 +20,13 @@
             $oneOrLess = false;
         }
         foreach($_SESSION["cart"] as $item => $amount){
-             
-             if(($count == 1) && ($oneOrLess == false)){
-                echo "<br>and,";
-                echo "<br>$item X $amount<br><br>";
-             }else{
-                echo "<br>$item X $amount";
+             if($amount > 0){
+                 if(($count == 1) && ($oneOrLess == false)){
+                    echo "<br>and,";
+                    echo "<br>$amount X $item<br><br>";
+                 }else{
+                    echo "<br>$amount X $item";
+                 }
              }
              $count--;
         }
