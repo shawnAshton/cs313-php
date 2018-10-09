@@ -24,8 +24,13 @@
                  if(($count == 1) && ($oneOrLess == false)){
                     echo "<br>and,";
                     echo "<br>$amount X $item<br><br>";
+                    echo ""
                  }else{
-                    echo "<br>$amount X $item";
+                    echo "<br>$amount X $item";//add html forms to do opposite of browse
+                    echo '   <form action="cartUpdateSubtract.php" method="post">
+                                <input type="hidden" name="item" value="' . $item . '">' . $item . '<br>
+                                <input type="submit" value="Add To Cart">
+                             </form>'
                  }
              }
              $count--;
