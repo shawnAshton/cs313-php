@@ -3,8 +3,8 @@ body{
    text-align: center;
 }
 
-form{
+input[type="submit"]{
    border-style: solid;
    border-radius: 5px;
-   width: 30%;
+
 }

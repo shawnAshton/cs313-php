@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <h1>The Contents of Yor Cart</h1>
+    <h1>The Contents of Your Cart</h1>
 
     <section>
     <?php
