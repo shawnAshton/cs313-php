@@ -84,7 +84,7 @@
       <input type="submit" value="Add To Cart">
    </form>
 
-   <a href="cart.php">Checkout</a>
+   <a href="cart.php">Go To Cart</a>
 
 </body>
 </html>
