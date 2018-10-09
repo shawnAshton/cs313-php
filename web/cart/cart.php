@@ -26,7 +26,11 @@
                     echo "<br>$amount X $item<br><br>";
                  
                  }else{
-                    echo "<br>$amount X $item";//add html forms to do opposite of browse
+                    echo "<br>$amount X $item";
+                    echo '   <form action="cartUpdateSubtract.php" method="post">
+                             <input type="hidden" name="item" value="Apple">Apple<br>
+                            <input type="submit" value="Add To Cart">
+                             </form>'
                  }
              }
              $count--;
