@@ -27,7 +27,7 @@
                     echo "<br>and,";
                     echo "<br>$amount X $item";
                     echo '   <form action="cartUpdateSubtract.php" method="post">
-                                <input type="hidden" name="item" value="'. $item . '">'. $item . '<br>
+                                <input type="hidden" name="item" value="'. $item . '">' . '<br>
                                  <input type="submit" value="Remove an Item">
                              </form>';
                     echo "<br><br>";
@@ -35,7 +35,7 @@
                  }else{
                     echo "<br>$amount X $item"; 
                     echo '   <form action="cartUpdateSubtract.php" method="post">
-                                <input type="hidden" name="item" value="'. $item . '">'. $item . '<br>
+                                <input type="hidden" name="item" value="'. $item . '">' . '<br>
                                  <input type="submit" value="Remove an Item">
                              </form>';
                  }
