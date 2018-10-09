@@ -10,8 +10,8 @@
       'Chicken' => 0,
       'French_Fry' => 0,
       'Small_Hot_Dog' => 0
-
-
+      'Rasberry_Pie' => 0
+      'Lollipop' => 0
 
 
       ];

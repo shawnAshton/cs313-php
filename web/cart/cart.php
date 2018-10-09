@@ -10,10 +10,40 @@
     <h1>Your Cart Results </h1>
 
     <section>
-    
-        <?php 
+    <?php
         session_start();
-        $count = sizeof($_POST["purchase"]);
+        $count = sizeof($_SESSION["cart"]);
+        $oneOrLess = false;
+        if ($count <= 1){
+            $oneOrLess = true;
+        }else{
+            $oneOrLess = false;
+        }
+        foreach($_SESSION["cart"] as $item){
+             
+             if(($count == 1) && ($oneOrLess == false)){
+                echo "<br>and,";
+                echo "<br>$item<br><br>";
+             }else{
+                echo "<br>$item";
+             }
+             $count--;
+        }
+
+    ?>
+       
+ 
+    </section>
+<a href="browse.php">Browse More?</a><br>
+<a href="checkout.php">Checkout</a>
+
+
+
+
+
+<!--  <?php 
+        session_start();
+        $count = sizeof($_SESSION["cart"]);
         $oneOrLess = false;
         if ($count <= 1){
             $oneOrLess = true;
@@ -41,11 +71,7 @@
                 }
             }
         ?>
- 
-     </section>
-<a href="browse.php">Browse More?</a><br>
-<a href="checkout.php">Checkout</a>
-
+ -->
 
     
 </body>
