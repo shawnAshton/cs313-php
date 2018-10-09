@@ -36,7 +36,7 @@
     ?>
     <h1>And it will be sent to the following address...</h1>
     <?php
-        echo htmlspecialchars($_POST["street"]);
+        echo ($_POST["street"]);
         echo '<br>';
         echo htmlspecialchars($_POST["city"]) . ', ' . htmlspecialchars($_POST["state"]) . ', ' . htmlspecialchars($_POST["zip"]);
         
