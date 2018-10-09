@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="shop.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Confirmation</title>
 </head>
 <body>
     <h1>You Purchased the following...</h1>

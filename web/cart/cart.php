@@ -3,7 +3,9 @@
 <html>
 <head>
     <title>Your Cart</title>
-    <link rel="stylesheet" href="../style.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="shop.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 

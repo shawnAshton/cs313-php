@@ -30,11 +30,14 @@
 
 <html>
 <head>
-   <title>Shop</title>
+   <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="shop.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Shopping on the Web</title>
 </head>
 <body>
    <div id="demo"></div>
-   <h1>BUY SOME OF THESE ITEMS</h1><br>
+   <h1>BUY SOME OF THESE ITEMS!</h1><br>
 
    <br>
    <form action="cartUpdate.php" method="post">
