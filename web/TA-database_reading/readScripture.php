@@ -37,7 +37,7 @@
 
 
       echo "<br><br><br> GOOD WAY<br>";
-      foreach ($db->query("select book,chapter,verse,content FROM scripture WHERE book = D&C")) {
+      foreach ($db->query('select book,chapter,verse,content FROM scripture WHERE book = D&C')) {
          echo "<b> " . $script['book'] . "</b> " . $script['chapter'] . ": " . $script['verse']. "<br>" . $script['content'] . "<br>";
       }
    ?>
