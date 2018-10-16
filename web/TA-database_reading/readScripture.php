@@ -30,7 +30,14 @@
 </head>
 <body>
    <?php
-      foreach ($db->query('select * FROM scripture') as $script) { //this is bad practice...only display what u need
+      foreach ($db->query('select * FROM scripture') as $script) 
+      { //this is bad practice...only display what u need
+         echo "<b> " . $script['book'] . "</b> " . $script['chapter'] . ": " . $script['verse']. "<br>" . $script['content'] . "<br>";
+      }
+
+
+      echo "<br><br><br> GOOD WAY<br>";
+      foreach ($db->query('select book,chapter,verse,content FROM scripture WHERE book = "D&C"')) {
          echo "<b> " . $script['book'] . "</b> " . $script['chapter'] . ": " . $script['verse']. "<br>" . $script['content'] . "<br>";
       }
    ?>
