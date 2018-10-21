@@ -15,7 +15,7 @@ foreach ($users as $user) {
       $currentUser = TRUE;
    }
 }
-if (currentUser == FALSE)
+if ($currentUser == FALSE)
 {
    echo "you are not a user in the system";
 }
