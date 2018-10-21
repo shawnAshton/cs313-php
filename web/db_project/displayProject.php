@@ -32,7 +32,7 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
    <ul>
 <?php
-$instance = 1;
+$instance = 0;
 foreach ($projects as $project) {
    $name = $project['name'];
    $job = $project['job_title'];
@@ -40,10 +40,10 @@ foreach ($projects as $project) {
    $instance_of_meeting = $project['instance_of_meeting'];
    if($instance != $instance_of_meeting)
    {
-      echo "<br><h3>$instance_of_meeting</h3>"; 
+      echo "<br><h3>Meeting #:$instance_of_meeting</h3>"; 
       $instance = $instance_of_meeting;
    }
-   echo "<li><p>$name - $job - $projectName</p></li>";
+   echo "<li><p>$name - $job - $projectName - $instance_of_meeting</p></li>";
 
 }
 ?>
