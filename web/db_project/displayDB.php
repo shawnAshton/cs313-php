@@ -18,6 +18,7 @@ foreach ($users as $user) {
 if ($currentUser == FALSE)
 {
    echo "you are not a user in the system";
+   header("location: login.php");
 }
 
 if ($currentUser)
