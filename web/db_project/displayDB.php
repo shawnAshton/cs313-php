@@ -55,11 +55,11 @@ if ($currentUser)
       foreach ($projects as $project) 
       {
          $project_title = $project['title'];
-         echo "<li><p>";
+         echo "<li>";
          echo "<a href=";
          echo '"displayProject.php?projectName=';
          echo "'$project_title'" . '">';
-         echo $project_title . "</p></li>";
+         echo $project_title . "</li>";
       }
    }
    ?>
