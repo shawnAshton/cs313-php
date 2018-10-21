@@ -40,10 +40,10 @@ foreach ($projects as $project) {
    $instance_of_meeting = $project['instance_of_meeting'];
    if($instance != $instance_of_meeting)
    {
-      echo "<br><h3>Meeting #:$instance_of_meeting</h3>"; 
+      echo "<br><h3>Meeting # $instance_of_meeting</h3>"; 
       $instance = $instance_of_meeting;
    }
-   echo "<li><p>$name - $job - $projectName - $instance_of_meeting</p></li>";
+   echo "<li><p>$name - $job</p></li>";
 
 }
 ?>
