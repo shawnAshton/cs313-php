@@ -2,14 +2,23 @@
 // connect to db
 require('dbConnect.php');
 $db = get_db();
-$username = $_POST['username'];
-$password = $_POST['password'];
-// query for all projects
-// $stmt = $db->prepare('SELECT * FROM table WHERE id=:id AND name=:name');
-// $stmt->bindValue(':id', $id, PDO::PARAM_INT);
-// $stmt->bindValue(':name', $name, PDO::PARAM_STR);
-// $stmt->execute();
-// $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$usernamePassed = $_POST['username'];
+$passwordPassed = $_POST['password'];
+$stmt = $db->prepare("SELECT username, password FROM program_user;")
+$stmt->execute();
+$users = $stmt->fetchAll(PDO::FETCH_ASSOC);
+// lets see if the user has a project
+foreach ($users as $user) {
+   if ($user['username'] == $usernamePassed)
+   {
+      echo "you are a current user";
+   }
+   else
+   {
+      echo "you are not a user";
+   }
+}
+
 $stmt = $db->prepare("SELECT w.name, j.job_title, jw.instance_of_meeting, p.title, pu.username FROM worker w
    JOIN job_worker jw ON w.id = jw.worker_id
    JOIN job j ON jw.job_id = j.id
