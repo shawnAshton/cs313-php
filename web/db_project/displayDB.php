@@ -4,7 +4,7 @@ require('dbConnect.php');
 $db = get_db();
 $usernamePassed = $_POST['username'];
 $passwordPassed = $_POST['password'];
-$stmt = $db->prepare("SELECT username, password FROM program_user;")
+$stmt = $db->prepare("SELECT username, password FROM program_user;");
 $stmt->execute();
 $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 // lets see if the user has a project
@@ -28,6 +28,8 @@ $stmt = $db->prepare("SELECT w.name, j.job_title, jw.instance_of_meeting, p.titl
 $stmt->execute();
 $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 // go through each movie in the result and display it
+
+
 ?>
 <!DOCTYPE html>
 <html>
