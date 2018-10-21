@@ -2,6 +2,8 @@
 // connect to db
 require('dbConnect.php');
 $db = get_db();
+$username = $_POST['username'];
+$password = $_POST['password'];
 // query for all projects
 // $stmt = $db->prepare('SELECT * FROM table WHERE id=:id AND name=:name');
 // $stmt->bindValue(':id', $id, PDO::PARAM_INT);
@@ -12,6 +14,7 @@ $stmt = $db->prepare("SELECT w.name, j.job_title, jw.instance_of_meeting, p.titl
    JOIN job_worker jw ON w.id = jw.worker_id
    JOIN job j ON jw.job_id = j.id
    JOIN project p ON j.project_id = p.id
+   JOIN program_user pu ON p.program_user_id = pu.id
    WHERE p.title = 'Scouts';");
 $stmt->execute();
 $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -29,6 +32,7 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
    <ul>
 <?php
 foreach ($projects as $project) {
+   $username = $project['username'];
    $name = $project['name'];
    $job = $project['job_title'];
    $projectName = $project['title'];
@@ -39,3 +43,9 @@ foreach ($projects as $project) {
 
 </body>
 </html>
+
+<!-- foreach ($projects as $project) {
+   $name = $project['name'];
+   $job = $project['job_title'];
+   $projectName = $project['title'];
+   echo "<li><p>$name - $job - $projectName</p></li>"; -->
