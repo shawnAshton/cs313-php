@@ -48,8 +48,13 @@ if ($currentUser)
    <title>projects</title>
 </head>
 <body>
-
-   <h1>projects</h1>
+   <?php 
+   if ($passwordError != TRUE && $currentUser != TRUE)
+   {
+      echo "<h1>Projects</h1>";
+   }
+   ?>
+   
 
    <ul>
 <?php
