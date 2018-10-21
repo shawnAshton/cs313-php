@@ -9,7 +9,7 @@ $stmt = $db->prepare("SELECT w.name, j.job_title, jw.instance_of_meeting, p.titl
    JOIN project p ON j.project_id = p.id
    JOIN program_user pu ON p.program_user_id = pu.id
    WHERE p.title = $projectName
-   ORDER BY jw.instance_of_meeting;'");
+   ORDER BY jw.instance_of_meeting;");
    
 $stmt->execute();
 $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
