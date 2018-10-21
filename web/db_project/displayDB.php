@@ -49,7 +49,7 @@ if ($currentUser)
 </head>
 <body>
    <?php 
-   if ($passwordError != TRUE && $currentUser != TRUE)
+   if ($passwordError != TRUE && $currentUser != FALSE)
    {
       echo "<h1>Projects</h1>";
    }
