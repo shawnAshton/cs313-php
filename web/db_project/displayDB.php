@@ -29,8 +29,8 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
    <ul>
 <?php
 foreach ($projects as $project) {
-   $name = $project['name'];
-   $job = $movie['job_title'];
+   $name = $project['w.name'];
+   $job = $movie['j.job_title'];
    echo "<li><p>$name ($job)</p></li>";
 }
 ?>
