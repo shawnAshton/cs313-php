@@ -9,14 +9,20 @@ $stmt->execute();
 $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 // lets see if the user has a project
 foreach ($users as $user) {
+   $currentUser = FALSE;
    if ($user['username'] == $usernamePassed)
    {
-      echo "you are a current user";
+      $currentUser = TRUE;
    }
-   else
-   {
-      echo "you are not a user";
-   }
+
+}
+if (currentUser == FALSE)
+{
+   echo "you are not a user in the system";
+}
+else
+{
+   echo "you are in the system";
 }
 
 $stmt = $db->prepare("SELECT w.name, j.job_title, jw.instance_of_meeting, p.title, pu.username FROM worker w
