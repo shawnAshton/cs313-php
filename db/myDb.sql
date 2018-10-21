@@ -31,3 +31,95 @@ CREATE TABLE job_worker
    ,worker_id INT NOT NULL REFERENCES worker(id)
    ,instance_of_meeting INT NOT NULL
 );
+
+
+INSERT INTO worker(name) VALUES
+('kevin'),
+('carl'),
+('sam'),
+('marc'),
+('bill'),
+('duke'),
+('josh');
+
+
+INSERT INTO program_user(username, password) VALUES
+('priest advisor', 'a'),
+('charity guy', 'b');
+
+INSERT INTO project(program_user_id, title) VALUES
+(3, 'Priest Quorum'),
+(3, 'Scouts'),
+(4, 'Charity');
+
+INSERT INTO job(job_title, project_id) VALUES
+('sacrament', 1),
+('bread', 1),
+('pray', 1),
+('spiritual thought', 1),
+('bring rope', 2),
+('lead knot tying', 2),
+('remind others', 2),
+('bring food', 2),
+('give money', 3), 
+('count money', 3);
+
+INSERT INTO job_worker(worker_id, job_id, instance_of_meeting) VALUES
+(3,1,1),
+(3,2,2),
+(3,3,3),
+(3,4,4),
+
+(4,4,1),
+(4,1,2),
+(4,2,3),
+(4,3,4),
+
+(5,3,1),
+(5,4,2),
+(5,1,3),
+(5,2,4),
+
+(6,2,1),
+(6,3,2),
+(6,4,3),
+(6,1,4);
+
+INSERT INTO job_worker(worker_id, job_id, instance_of_meeting) VALUES
+(6,5,1),
+(6,6,2),
+(6,7,3),
+
+(7,7,1),
+(7,5,2),
+(7,6,3),
+
+(8,6,1),
+(8,7,2),
+(8,5,3);
+
+-- how to do all for a project
+SELECT w.name, j.job_title, jw.instance_of_meeting, p.title FROM worker w
+   JOIN job_worker jw ON w.id = jw.worker_id
+   JOIN job j ON jw.job_id = j.id
+   JOIN project p ON j.project_id = p.id
+   WHERE p.title = 'Priest Quorum';
+
+SELECT w.name, j.job_title, jw.instance_of_meeting, p.title FROM worker w
+   JOIN job_worker jw ON w.id = jw.worker_id
+   JOIN job j ON jw.job_id = j.id
+   JOIN project p ON j.project_id = p.id
+   WHERE p.title = 'Scouts';
+
+-- how to find all for a worker
+SELECT w.name, j.job_title, jw.instance_of_meeting, p.title FROM worker w
+   JOIN job_worker jw ON w.id = jw.worker_id
+   JOIN job j ON jw.job_id = j.id
+   JOIN project p ON j.project_id = p.id
+   WHERE w.name= 'marc';
+
+SELECT username, password FROM program_user;
+
+SELECT p.title FROM project p
+   JOIN program_user pu ON p.program_user_id = pu.id
+   WHERE pu.username = 'priest advisor';
