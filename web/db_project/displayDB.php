@@ -52,21 +52,21 @@ if ($currentUser)
    if ($passwordError != TRUE && $currentUser != FALSE)
    {
       echo "<h1>Projects</h1>";
+      foreach ($projects as $project) 
+      {
+         $project_title = $project['title'];
+         echo "<li><p>";
+         echo "<a href=";
+         echo '"displayProject.php?projectName=';
+         echo "'$project_title'" . '">';
+         echo $project_title . "</p></li>";
+      }
    }
    ?>
    
 
    <ul>
-<?php
-foreach ($projects as $project) {
-   $project_title = $project['title'];
-   echo "<li><p>";
-   echo "<a href=";
-   echo '"displayProject.php?projectName=';
-   echo "'$project_title'" . '">';
-   echo $project_title . "</p></li>";
-}
-?>
+
    </ul>
 
 </body>
