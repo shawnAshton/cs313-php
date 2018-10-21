@@ -30,7 +30,7 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <?php
 foreach ($projects as $project) {
    $name = $project['name'];
-   $job = $movie['job'];
+   $job = $movie['job_title'];
    echo "<li><p>$name ($job)</p></li>";
 }
 ?>
