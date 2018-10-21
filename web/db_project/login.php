@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>LOGIN</title>
+   <title>Login</title>
 </head>
 <body>
    <form action="displayDB.php" method="POST">
