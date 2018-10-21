@@ -39,7 +39,7 @@ foreach ($projects as $project) {
    $projectName = $project['title'];
    if($instance < $instance_of_meeting)
    {
-      echo "<br>";
+      echo "<br>$instance:$instance_of_meeting<br>";
       $instance++;
    }
    $instance_of_meeting = $project['instance_of_meeting'];
