@@ -24,7 +24,11 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </head>
 <body>
 
-   <h1><?php echo $projectName;?></h1>
+   <h1>
+      <?php echo substr($projectName, 1,-1);
+
+      ?>   
+      </h1>
 
    <ul>
 <?php
