@@ -41,6 +41,7 @@ foreach ($projects as $project) {
    if($instance != $instance_of_meeting)
    {
       echo "<br>";
+      $instance = $instance_of_meeting;
    }
    echo "<li><p>$name - $job - $projectName - $instance_of_meeting</p></li>";
 
