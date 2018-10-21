@@ -32,12 +32,18 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
    <ul>
 <?php
+$instance = 1;
 foreach ($projects as $project) {
    $name = $project['name'];
    $job = $project['job_title'];
    $projectName = $project['title'];
    $instance_of_meeting = $project['instance_of_meeting'];
    echo "<li><p>$name - $job - $projectName - $instance_of_meeting</p></li>";
+   if($instance < $instance_of_meeting)
+   {
+      echo "<br>";
+      $instance++;
+   }
 }
 ?>
    </ul>
