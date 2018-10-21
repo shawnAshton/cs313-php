@@ -10,7 +10,7 @@ $stmt = $db->prepare("SELECT w.name, j.job_title, jw.instance_of_meeting, p.titl
    JOIN program_user pu ON p.program_user_id = pu.id
    WHERE p.title = $projectName
    ORDER BY jw.instance_of_meeting;");
-   
+
 $stmt->execute();
 $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 // go through each movie in the result and display it
@@ -20,11 +20,11 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <!DOCTYPE html>
 <html>
 <head>
-   <title>projects</title>
+   <title>My Project</title>
 </head>
 <body>
 
-   <h1>projects</h1>
+   <h1><?php echo $projectName;?></h1>
 
    <ul>
 <?php
