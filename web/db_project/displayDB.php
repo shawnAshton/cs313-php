@@ -8,13 +8,12 @@ $stmt = $db->prepare("SELECT username, password FROM program_user;");
 $stmt->execute();
 $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 // lets see if the user has a project
+$currentUser = FALSE;
 foreach ($users as $user) {
-   $currentUser = FALSE;
    if ($user['username'] == $usernamePassed)
    {
       $currentUser = TRUE;
    }
-
 }
 if (currentUser == FALSE)
 {
