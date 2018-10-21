@@ -43,7 +43,7 @@ foreach ($projects as $project) {
       echo "<br><h4>Meeting # $instance_of_meeting</h4>"; 
       $instance = $instance_of_meeting;
    }
-   echo "<li>$name - $job</li>";
+   echo "<li>$name - $job - $instance_of_meeting</li>";
 
 }
 ?>
