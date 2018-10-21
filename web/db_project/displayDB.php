@@ -50,7 +50,7 @@ foreach ($projects as $project) {
    echo "<li><p>";
    echo "<a href=";
    echo '"displayProject.php?projectName=';
-   echo "$project_title'" . ">";
+   echo "'$project_title'" . ">";
    echo $project_title . "</p></li>";
 }
 ?>
