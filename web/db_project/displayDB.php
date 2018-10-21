@@ -19,10 +19,7 @@ if ($currentUser == FALSE)
 {
    echo "you are not a user in the system";
 }
-else
-{
-   echo "you are in the system";
-}
+
 if ($currentUser)
 {
    $stmt = $db->prepare("SELECT p.title FROM project p
