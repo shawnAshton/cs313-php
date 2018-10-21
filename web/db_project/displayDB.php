@@ -10,7 +10,7 @@ $password = $_POST['password'];
 // $stmt->bindValue(':name', $name, PDO::PARAM_STR);
 // $stmt->execute();
 // $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-$stmt = $db->prepare("SELECT w.name, j.job_title, jw.instance_of_meeting, p.title FROM worker w
+$stmt = $db->prepare("SELECT w.name, j.job_title, jw.instance_of_meeting, p.title, pu.username FROM worker w
    JOIN job_worker jw ON w.id = jw.worker_id
    JOIN job j ON jw.job_id = j.id
    JOIN project p ON j.project_id = p.id
