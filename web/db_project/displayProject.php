@@ -30,7 +30,8 @@ foreach ($projects as $project) {
    $name = $project['name'];
    $job = $project['job_title'];
    $projectName = $project['title'];
-   echo "<li><p>$name - $job - $projectName</p></li>";
+   $instance_of_meeting = $project['instance_of_meeting'];
+   echo "<li><p>$name - $job - $projectName - $instance_of_meeting</p></li>";
 }
 ?>
    </ul>
