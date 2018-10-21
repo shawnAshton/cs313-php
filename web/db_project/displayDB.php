@@ -31,7 +31,8 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 foreach ($projects as $project) {
    $name = $project['name'];
    $job = $project['job_title'];
-   echo "<li><p>$name ($job)</p></li>";
+   $projectName = $project['title']
+   echo "<li><p>$name - $job - $projectName</p></li>";
 }
 ?>
    </ul>
