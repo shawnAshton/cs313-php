@@ -60,6 +60,8 @@ if ($currentUser)
          echo '"displayProject.php?projectName=';
          echo "'$project_title'" . '">';
          echo $project_title . "</li>";
+
+         echo "<li><a href='displayProject.php?projectName=$project_title'>$project_title<li>";
       }
    }
    ?>
