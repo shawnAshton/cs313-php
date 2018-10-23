@@ -59,7 +59,7 @@ if ($currentUser)
          $project_title = $project['title'];
          echo "<li><a href=";
          echo '"displayProject.php?projectName=';
-         echo "'$project_title'" . '">';
+         echo "$project_title" . '">';
          echo $project_title . "</li>";
       }
    }
