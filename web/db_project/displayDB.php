@@ -36,7 +36,7 @@ if ($currentUser)
 {
    $stmt = $db->prepare("SELECT p.title FROM project p
    JOIN program_user pu ON p.program_user_id = pu.id
-   WHERE pu.username = '$usernamePassed';");
+   WHERE pu.username = ':usernamePassed';");
    $stmt->bindValue(":usernamePassed", $usernamePassed, PDO::PARAM_STR);
    $stmt->execute();
    $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
