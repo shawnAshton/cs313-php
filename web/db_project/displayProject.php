@@ -8,9 +8,9 @@ $stmt = $db->prepare("SELECT w.name, j.job_title, jw.instance_of_meeting, p.titl
    JOIN job j ON jw.job_id = j.id
    JOIN project p ON j.project_id = p.id
    JOIN program_user pu ON p.program_user_id = pu.id
-   WHERE p.title = $projectName
+   WHERE p.title = :projectName
    ORDER BY jw.instance_of_meeting, w.name;");
-// $stmt->bindValue(":projectName", $projectName, PDO::PARAM_STR);
+$stmt->bindValue(":projectName", $projectName, PDO::PARAM_STR);
 $stmt->execute();
 $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 // go through each movie in the result and display it
