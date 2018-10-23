@@ -5,6 +5,7 @@ $db = get_db();
 $usernamePassed = $_POST['username'];
 $passwordPassed = $_POST['password'];
 $stmt = $db->prepare("SELECT username, password FROM program_user;");
+// I NEED TO BIND THINGS THAT I USE...
 $stmt->execute();
 $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 // lets see if the user has a project
@@ -36,6 +37,7 @@ if ($currentUser)
    $stmt = $db->prepare("SELECT p.title FROM project p
    JOIN program_user pu ON p.program_user_id = pu.id
    WHERE pu.username = '$usernamePassed';");
+   $stmt->bindValue(":usernamePassed", $usernamePassed, PDO::PARAM_STR);
    $stmt->execute();
    $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
    // go through each movie in the result and display it
