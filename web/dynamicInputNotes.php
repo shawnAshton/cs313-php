@@ -32,7 +32,7 @@
          <option value="radio">Radio</option>
       </select>
       <input type="button" value="add" onclick="add(document.forms[0].element.value)"/>
-      <span id="fooBar">&nbsp;</span>
+      <span id="fooBar"></span>
    </form>
    </body>
 </html>
