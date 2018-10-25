@@ -55,10 +55,12 @@ if ($currentUser)
       if (type == 1)
       {
          newTextBox.setAttribute("name", "name[]");
+         newTextBox.setAttribute("placeholder", "enter a name");
       }
       else
       {
          newTextBox.setAttribute("name", "job[]");
+         newTextBox.setAttribute("placeholder", "enter a job");
       }
 
       var divTag = document.getElementById("textbox");
@@ -96,6 +98,11 @@ if ($currentUser)
       <div id="textbox">
          <input type="text" name="names[]" id="input">
          <input type="button" id="button" value="Add Name" onclick="addTextBox(1)"/>
+      </div>
+
+      <div id="textbox">
+         <input type="text" name="names[]" id="input">
+         <input type="button" id="button" value="Add Name" onclick="addTextBox(2)"/>
       </div>
    </form>
    <ul>
