@@ -24,7 +24,7 @@
       <br/>
       <h3>Please select any type</h3>
 
-      <input type="text" name="names[]">
+      <input type="text" name="names[]" id="input">
 
       <select name="element" id="extra">
          <option value="button">Button</option>
@@ -32,6 +32,7 @@
          <option value="radio">Radio</option>
       </select>
       <input type="button" value="add" onclick="add(document.forms[0].element.value)"/>
+      <input type="button" value="addText" onclick="add(document.getElementById('input').value)"/>
       <span id="textbox"></span>
    </form>
    </body>
