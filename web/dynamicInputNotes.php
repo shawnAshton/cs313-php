@@ -15,7 +15,8 @@
          //Append the newTextBox in page (in span).
 
          divTag.appendChild(newTextBox);
-         divTag.insertBefore(document.createElement("BR "), button);
+         divTag.insertBefore(document.createElement("BR"), button);
+         divTag.appendChild(document.createTextNode(" "))
          divTag.insertBefore(newTextBox, button);
       }
 
