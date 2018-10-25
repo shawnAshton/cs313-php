@@ -17,11 +17,6 @@
          divTag.appendChild(newTextBox);
          divTag.insertBefore(document.createElement("BR"), button);
          divTag.insertBefore(newTextBox, button);
-         
-
-         // var form = document.getElementById("nameForm");
-         // form.appendChild("<br>");
-
       }
 
       </script>
@@ -32,15 +27,7 @@
       <br/>
       <h3>Please select any type</h3>
 
-      <input type="text" name="names[]" id="input">
-
-      <select name="element" id="extra">
-         <option value="button">Button</option>
-         <option value="text">TextBox</option>
-         <option value="radio">Radio</option>
-      </select>
-      <input type="button" value="add" onclick="add(document.forms[0].element.value)"/>
-      
+      <input type="text" name="names[]" id="input">      
       <div id="textbox">
          <input type="button" id="button" value="addText" onclick="add(document.getElementById('input').value)"/>
       </div>
