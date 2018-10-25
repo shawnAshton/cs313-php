@@ -84,7 +84,7 @@ if ($currentUser)
          echo "<li><a href=";
          echo '"displayProject.php?projectName=';
          echo "$project_title" . '">';
-         echo $project_title . "</li>";
+         echo $project_title . "</a></li>";
       }
    }
    ?>
