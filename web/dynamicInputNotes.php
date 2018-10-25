@@ -14,7 +14,7 @@
          var foo = document.getElementById("textbox");
          //Append the element in page (in span).
          foo.appendChild(element);
-         document.write("<br");
+        
 
       }
 
