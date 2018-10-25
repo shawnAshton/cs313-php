@@ -13,7 +13,7 @@
          element.setAttribute("name", type);
          var foo = document.getElementById("textbox");
          //Append the element in page (in span).
-         foo.appendChild(element);
+         foo.appendChild(element + "<br>");
 
 
       }
@@ -21,7 +21,7 @@
       </script>
    </head>
    <body>
-   <form>
+   <form id = "nameForm">
       <h2>Dynamically add textbox, and radio button in form</h2>
       <br/>
       <h3>Please select any type</h3>
