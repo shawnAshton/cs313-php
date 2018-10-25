@@ -11,10 +11,10 @@
          element.setAttribute("type", type);
          element.setAttribute("value", type);
          element.setAttribute("name", type);
-         var foo = document.getElementById("textbox");
+         var spanTag = document.getElementById("textbox");
          //Append the element in page (in span).
-         foo.appendChild(element);
-         foo.appendChild("<br>");
+         spanTag.appendChild(element);
+         spanTag.appendChild("<br>");
 
       }
 
