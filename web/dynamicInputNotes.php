@@ -27,7 +27,7 @@
       <br/>
       <h3>Please select any type</h3>
 
-      <input type="text" name="names[]" id="input">      
+      <input type="text" name="names[]" id="input"><br>      
       <div id="textbox">
          <input type="button" id="button" value="addText" onclick="add(document.getElementById('input').value)"/>
       </div>
