@@ -65,6 +65,7 @@ if ($currentUser)
       divTag.appendChild(newTextBoxName);
       divTag.insertBefore(document.createElement("BR"), button);
       divTag.insertBefore(newTextBoxName, button);
+      divTag.insertBefore(newTextBoxJob, button);
       divTag.insertBefore(document.createTextNode(" "), button);
    }
 
