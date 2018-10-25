@@ -6,16 +6,18 @@
       <script language="Javascript">
       function add(type) {
          //Create an input type dynamically.
-         var element = document.createElement("input");
-         //Assign different attributes to the element.
-         element.setAttribute("type", type);
-         element.setAttribute("value", type);
-         element.setAttribute("name", type);
-         var spanTag = document.getElementById("textbox");
-         //Append the element in page (in span).
-         spanTag.appendChild(element);
+         var newTextBox = document.createElement("input");
+         var button = document.getElementById("button");
+         //Assign different attributes to the newTextBox.
+         newTextBox.setAttribute("type", type);
+         newTextBox.setAttribute("value", type);
+         newTextBox.setAttribute("name", type);
+         var divTag = document.getElementById("textbox");
+         //Append the newTextBox in page (in span).
+         divTag.appendChild(newTextBox);
+         divTag.insertBefore(newTextBox, button);
+         divTag.appendChild(document.createElement("BR"));
 
-         spanTag.appendChild(document.createElement("BR"));
          // var form = document.getElementById("nameForm");
          // form.appendChild("<br>");
 
@@ -37,7 +39,7 @@
          <option value="radio">Radio</option>
       </select>
       <input type="button" value="add" onclick="add(document.forms[0].element.value)"/>
-      <input type="button" value="addText" onclick="add(document.getElementById('input').value)"/>
+      <input type="button" id="button" value="addText" onclick="add(document.getElementById('input').value)"/>
       <div id="textbox"></div>
    </form>
    </body>
