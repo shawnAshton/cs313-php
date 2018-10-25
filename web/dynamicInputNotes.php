@@ -4,12 +4,20 @@
       Dinamically add textbox, radio button
       </title>
       <script language="Javascript">
-      function addTextBox() {
+      function addTextBox(type) {
          //Create an input type dynamically and insert in front of the button
          var newTextBox = document.createElement("input");
          var button = document.getElementById("button");
          newTextBox.setAttribute("type", "text");
-         newTextBox.setAttribute("name", "name[]");
+         if (type == 1)
+         {
+            newTextBox.setAttribute("name", "name[]");
+         }
+         else
+         {
+            newTextBox.setAttribute("name", "job[]");
+         }
+
          var divTag = document.getElementById("textbox");
          divTag.appendChild(newTextBox);
          divTag.insertBefore(document.createElement("BR"), button);
@@ -29,7 +37,7 @@
       
       <div id="textbox">
          <input type="text" name="names[]" id="input">
-         <input type="button" id="button" value="Add Name" onclick="addTextBox()"/>
+         <input type="button" id="button" value="Add Name" onclick="addTextBox(1)"/>
       </div>
    </form>
    </body>
