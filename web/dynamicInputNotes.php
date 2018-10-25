@@ -15,7 +15,7 @@
          var divTag = document.getElementById("textbox");
          //Append the newTextBox in page (in span).
          divTag.appendChild(newTextBox);
-         // divTag.insertBefore(newTextBox, button);
+         divTag.insertBefore(newTextBox, button);
          divTag.appendChild(document.createElement("BR"));
 
          // var form = document.getElementById("nameForm");
@@ -39,8 +39,10 @@
          <option value="radio">Radio</option>
       </select>
       <input type="button" value="add" onclick="add(document.forms[0].element.value)"/>
-      <input type="button" id="button" value="addText" onclick="add(document.getElementById('input').value)"/>
-      <div id="textbox"></div>
+      
+      <div id="textbox">
+         <input type="button" id="button" value="addText" onclick="add(document.getElementById('input').value)"/>
+      </div>
    </form>
    </body>
 </html>
