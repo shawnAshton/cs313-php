@@ -14,6 +14,8 @@
          var spanTag = document.getElementById("textbox");
          //Append the element in page (in span).
          spanTag.appendChild(element);
+
+         spanTag.appendChild(document.createElement("BR"));
          // var form = document.getElementById("nameForm");
          // form.appendChild("<br>");
 
