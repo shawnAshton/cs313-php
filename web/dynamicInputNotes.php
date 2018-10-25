@@ -16,6 +16,7 @@
 
          divTag.appendChild(newTextBox);
          divTag.insertBefore(document.createElement("BR"), button);
+         divTag.insertBefore(document.createElement("BR"), button);
          divTag.insertBefore(newTextBox, button);
          divTag.insertBefore(document.createTextNode(" "), button);
       }
