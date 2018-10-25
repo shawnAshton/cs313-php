@@ -3,6 +3,7 @@
 require('dbConnect.php');
 $db = get_db();
 $projectName = $_GET['projectName'];
+$projectName = htmlspecialchars($projectName);
 $stmt = $db->prepare("SELECT w.name, j.job_title, jw.instance_of_meeting, p.title, pu.username FROM worker w
    JOIN job_worker jw ON w.id = jw.worker_id
    JOIN job j ON jw.job_id = j.id
@@ -25,7 +26,7 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <body>
 
    <h1>
-      <?php echo substr($projectName, 1,-1);
+      <?php echo $projectName;
 
       ?>   
       </h1>
