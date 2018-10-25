@@ -15,7 +15,7 @@
          var divTag = document.getElementById("textbox");
          //Append the newTextBox in page (in span).
          divTag.appendChild(newTextBox);
-         divTag.insertBefore(newTextBox, button);
+         // divTag.insertBefore(newTextBox, button);
          divTag.appendChild(document.createElement("BR"));
 
          // var form = document.getElementById("nameForm");
