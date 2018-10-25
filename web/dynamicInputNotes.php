@@ -9,9 +9,8 @@
          var newTextBox = document.createElement("input");
          var button = document.getElementById("button");
          //Assign different attributes to the newTextBox.
-         // newTextBox.setAttribute("type", type);
-         // newTextBox.setAttribute("value", type);
-         // newTextBox.setAttribute("name", type);
+         newTextBox.setAttribute("type", "text");
+         newTextBox.setAttribute("name", "name[]");
          var divTag = document.getElementById("textbox");
          //Append the newTextBox in page (in span).
 
