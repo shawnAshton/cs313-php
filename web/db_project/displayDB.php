@@ -47,26 +47,24 @@ if ($currentUser)
 <!DOCTYPE html>
 <html>
    <script language="Javascript">
-   function addTextBox(type) {
+   function addTextBoxes() {
       //Create an input type dynamically and insert in front of the button
-      var newTextBox = document.createElement("input");
+      var newTextBoxName = document.createElement("input");
+      var newTextBoxJob = document.createElement("input");
       var button = document.getElementById("button");
-      newTextBox.setAttribute("type", "text");
-      if (type == 1)
-      {
-         newTextBox.setAttribute("name", "name[]");
-         newTextBox.setAttribute("placeholder", "enter a name");
-      }
-      else
-      {
-         newTextBox.setAttribute("name", "job[]");
-         newTextBox.setAttribute("placeholder", "enter a job");
-      }
+      newTextBoxName.setAttribute("type", "text");
+      newTextBoxJob.setAttribute("type", "text");
+
+      newTextBoxName.setAttribute("name", "name[]");
+      newTextBoxName.setAttribute("placeholder", "enter a name");
+      newTextBoxJob.setAttribute("name", "job[]");
+      newTextBoxJob.setAttribute("placeholder", "enter a job");
 
       var divTag = document.getElementById("textbox");
-      divTag.appendChild(newTextBox);
+      divTag.appendChild(newTextBoxJob);
+      divTag.appendChild(newTextBoxName);
       divTag.insertBefore(document.createElement("BR"), button);
-      divTag.insertBefore(newTextBox, button);
+      divTag.insertBefore(newTextBoxName, button);
       divTag.insertBefore(document.createTextNode(" "), button);
    }
 
@@ -96,12 +94,7 @@ if ($currentUser)
       <br/>
       <div id="textbox">
          <input type="text" name="names[]" id="input">
-         <input type="button" id="button" value="Add Name" onclick="addTextBox(1)"/>
-      </div>
-
-      <div id="textbox">
-         <input type="text" name="names[]" id="input">
-         <input type="button" id="button" value="Add Job" onclick="addTextBox(2)"/>
+         <input type="button" id="button" value="Add Name" onclick="addTextBoxes()"/>
       </div>
    </form>
    <ul>
