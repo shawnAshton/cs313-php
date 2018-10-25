@@ -13,7 +13,7 @@
          element.setAttribute("name", type);
          var foo = document.getElementById("textbox");
          //Append the element in page (in span).
-         foo.appendChild(element + <br>);
+         foo.appendChild(element);
 
       }
 
