@@ -94,7 +94,8 @@ if ($currentUser)
       <h2>Add Names</h2>
       <br/>
       <div id="textbox">
-         <input type="text" name="names[]" id="input">
+         <input type="text" name="names[]" id="input" placeholder="enter a name">
+         <input type="text" name="job[]" id="input" placeholder="enter a job">
          <input type="button" id="button" value="Add Name" onclick="addTextBoxes()"/>
       </div>
    </form>
