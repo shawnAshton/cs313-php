@@ -14,7 +14,8 @@
          var spanTag = document.getElementById("textbox");
          //Append the element in page (in span).
          spanTag.appendChild(element);
-         spanTag.appendChild("<br>");
+         // var form = document.getElementById("nameForm");
+         // form.appendChild("<br>");
 
       }
 
@@ -35,7 +36,7 @@
       </select>
       <input type="button" value="add" onclick="add(document.forms[0].element.value)"/>
       <input type="button" value="addText" onclick="add(document.getElementById('input').value)"/>
-      <span id="textbox"></span>
+      <div id="textbox"></div>
    </form>
    </body>
 </html>
