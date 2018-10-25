@@ -66,7 +66,6 @@ if ($currentUser)
       var divTag = document.getElementById("textbox");
       divTag.appendChild(newTextBox);
       divTag.insertBefore(document.createElement("BR"), button);
-      divTag.insertBefore(document.createElement("BR"), button);
       divTag.insertBefore(newTextBox, button);
       divTag.insertBefore(document.createTextNode(" "), button);
    }
@@ -102,7 +101,7 @@ if ($currentUser)
 
       <div id="textbox">
          <input type="text" name="names[]" id="input">
-         <input type="button" id="button" value="Add Name" onclick="addTextBox(2)"/>
+         <input type="button" id="button" value="Add Job" onclick="addTextBox(2)"/>
       </div>
    </form>
    <ul>
