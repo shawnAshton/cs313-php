@@ -2,10 +2,10 @@
 // connect to db
 session_start();
 $user = $_SESSION["user"];
-$projectTitle = $_POST["projectTitle"];
-$totalMeetings = $_POST["totalMeetings"];
-$names = $_POST["names"];
-$jobs = $_POST["jobs"];
+$projectTitle = $_GET["projectTitle"];
+$totalMeetings = $_GET["totalMeetings"];
+$names = $_GET["names"];
+$jobs = $_GET["jobs"];
 require('dbConnect.php');
 $db = get_db();
 ?>
@@ -17,16 +17,16 @@ $db = get_db();
 </head>
 <body>
       <?php
-      echo "user: $user";
-      echo "projectTitle: $projectTitle";
-      echo "totalMeetings: $totalMeetings";
+      echo "user: $user<br>";
+      echo "projectTitle: $projectTitle<br>";
+      echo "totalMeetings: $totalMeetings<br>";
       foreach($names as $name)
       {
-         echo "name: $name";
+         echo "name: $name<br>";
       }
       foreach($jobs as $job)
       {
-         echo "job: $job";
+         echo "job: $job<br>";
       }
    ?>
 </body>
