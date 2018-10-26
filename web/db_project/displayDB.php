@@ -4,6 +4,7 @@ session_start();
 // connect to db
 require('dbConnect.php');
 $db = get_db();
+$currentUser = FALSE;
 if(!(isset($_SESSION["user"])))
 {
    $usernamePassed = $_POST['username'];
@@ -15,7 +16,7 @@ if(!(isset($_SESSION["user"])))
    $stmt->execute();
    $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
    // lets see if the user has a project
-   $currentUser = FALSE;
+   
    $passwordError = FALSE;
    foreach ($users as $user) {
       if ($user['username'] == $usernamePassed)
