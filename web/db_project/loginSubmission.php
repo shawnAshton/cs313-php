@@ -37,7 +37,7 @@ if ($passwordError == TRUE && $currentUser == TRUE)
 if ($currentUser)
 {
    $_SESSION["user"] = $usernamePassed;
-   header('location::displayDB.php');
+   header('location:displayDB.php');
 }
 die();
 ?>
