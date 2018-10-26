@@ -4,6 +4,7 @@ require('dbConnect.php');
 $db = get_db();
 $usernamePassed = $_POST['username'];
 $passwordPassed = $_POST['password'];
+$usernamePassed = htmlspecialchars($usernamePassed);
 $stmt = $db->prepare("SELECT username, password FROM program_user;");
 // I NEED TO BIND THINGS THAT I USE...
 $stmt->execute();
@@ -34,6 +35,8 @@ if ($passwordError == TRUE && $currentUser == TRUE)
 
 if ($currentUser)
 {
+   session_start();
+   $_SESSION["user"] = $usernamePassed;
    $stmt = $db->prepare("SELECT p.title FROM project p
    JOIN program_user pu ON p.program_user_id = pu.id
    WHERE pu.username = :usernamePassed;");
@@ -62,7 +65,7 @@ if ($currentUser)
          echo "$project_title" . '">';
          echo $project_title . "</a></li>";
       }
-      echo  "<br><br>";
+      echo "<br><br>";
       echo "<a href='createProject.php?username=$usernamePassed'>Create Project</a>";
    }
    ?>
