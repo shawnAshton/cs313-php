@@ -4,11 +4,11 @@ session_start();
 require('dbConnect.php');
 $db = get_db();
 
-   $usernamePassed $_SESSION["user"];
+   $username = $_SESSION["user"];
    $stmt = $db->prepare("SELECT p.title FROM project p
    JOIN program_user pu ON p.program_user_id = pu.id
-   WHERE pu.username = :usernamePassed;");
-   $stmt->bindValue(":usernamePassed", $usernamePassed, PDO::PARAM_STR);
+   WHERE pu.username = :username;");
+   $stmt->bindValue(":username", $username, PDO::PARAM_STR);
    $stmt->execute();
    $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
    // go through each movie in the result and display it
