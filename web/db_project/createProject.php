@@ -1,8 +1,8 @@
 <?php
 // connect to db
 session_start();
-$user = $_SESSION['user'];
-echo "XX$userXX";
+$user = $_SESSION["user"];
+echo "XX $user XX";
 require('dbConnect.php');
 $db = get_db();
 ?>
