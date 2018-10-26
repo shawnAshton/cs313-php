@@ -63,8 +63,8 @@ if ($currentUser)
          echo $project_title . "</a></li>";
       }
    }
-   echo  "<br><br>"
-   echo "<a href='createProject.php?username=$usernamePassed'>Create Project</a>"
+   echo  "<br><br>";
+   echo "<a href='createProject.php?username=$usernamePassed'>Create Project</a>";
    ?>
 
 
