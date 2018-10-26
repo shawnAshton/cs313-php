@@ -17,6 +17,7 @@ foreach ($users as $user) {
    if ($user['username'] == $usernamePassed)
    {
       $currentUser = TRUE;
+      $_SESSION["user_id"] = $user["id"];
       if($user['password'] != $passwordPassed)
       {
          $passwordError = TRUE;

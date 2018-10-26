@@ -2,32 +2,21 @@
 // connect to db
 session_start();
 $user = $_SESSION["user"];
+$user_id = $_SESSION["user_id"];
 $projectTitle = $_GET["projectTitle"];
 $totalMeetings = $_GET["totalMeetings"];
 $names = $_GET["names"];
 $jobs = $_GET["jobs"];
 require('dbConnect.php');
 $db = get_db();
+
+echo "USER ID: $user_id;<br>";
+//insert project into database
+
+//insert names into worker
+
+//insert jobs into job
+
+//insert into job_worker...
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-   <title></title>
-</head>
-<body>
-      <?php
-      echo "user: $user<br>";
-      echo "projectTitle: $projectTitle<br>";
-      echo "totalMeetings: $totalMeetings<br>";
-      foreach($names as $name)
-      {
-         echo "name: $name<br>";
-      }
-      foreach($jobs as $job)
-      {
-         echo "job: $job<br>";
-      }
-   ?>
-</body>
-</html>

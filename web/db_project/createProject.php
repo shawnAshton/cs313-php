@@ -10,15 +10,16 @@ $db = get_db();
 <html>
    <script language="Javascript">
    function addTextBoxes() {
-      //Create an input type dynamically and insert in front of the button
+      //Create input types dynamically and insert in front of the button
       var newTextBoxName = document.createElement("input");
       var newTextBoxJob = document.createElement("input");
       var button = document.getElementById("button");
-      newTextBoxName.setAttribute("type", "text");
-      newTextBoxJob.setAttribute("type", "text");
 
+      //change the attributes of the input tag to make sure they are correct
+      newTextBoxName.setAttribute("type", "text");
       newTextBoxName.setAttribute("name", "names[]");
       newTextBoxName.setAttribute("placeholder", "enter a name");
+      newTextBoxJob.setAttribute("type", "text");
       newTextBoxJob.setAttribute("name", "jobs[]");
       newTextBoxJob.setAttribute("placeholder", "enter a job");
 
@@ -48,7 +49,7 @@ $db = get_db();
       <div id="textbox">
          <input type="text" name="names[]" id="input" placeholder="enter a name">
          <input type="text" name="jobs[]"  placeholder="enter a job">
-         <input type="button" id="button" value="Add Input Field" onclick="addTextBoxes()"/>
+         <input type="button" id="button" value="Add Input Fields" onclick="addTextBoxes()"/>
       </div>
       <input type="submit" value="Create Project">
    </form>
