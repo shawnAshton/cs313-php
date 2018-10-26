@@ -38,7 +38,7 @@ $db = get_db();
       <h2>Project Title</h2>
       <input type="text" name="projectTitle"  placeholder="enter a title">
       <h2>Enter The number of meetings you want to populate</h2>
-      <input type="text" name="totalMeetings"  placeholder="enter a title">
+      <input type="text" name="totalMeetings"  placeholder="enter a number">
 
       <h2>Add Names and Jobs</h2>
       <br/>
