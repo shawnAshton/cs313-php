@@ -65,7 +65,7 @@ if ($currentUser)
    }
    ?>
    <br><br>
-   <a href="createProject.php">create Project</a>
+   <a href="createProject.php">Create Project</a>
    <ul>
 
    </ul>
