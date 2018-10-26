@@ -37,7 +37,7 @@ $db = get_db();
    <title>Create projects</title>
 </head>
 <body>
-   <form id = "nameForm">
+   <form id = "nameForm" action="insertProject.php" method="POST">
       <h2>Project Title</h2>
       <input type="text" name="projectTitle"  placeholder="enter a title">
       <h2>Enter The number of meetings you want to populate</h2>
