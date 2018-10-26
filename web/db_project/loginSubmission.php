@@ -6,7 +6,7 @@ $db = get_db();
 $usernamePassed = $_POST['username'];
 $passwordPassed = $_POST['password'];
 $usernamePassed = htmlspecialchars($usernamePassed);
-$stmt = $db->prepare("SELECT username, password FROM program_user;");
+$stmt = $db->prepare("SELECT username, password, id FROM program_user;");
 // I NEED TO BIND THINGS THAT I USE...
 $stmt->execute();
 $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
