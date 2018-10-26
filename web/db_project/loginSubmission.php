@@ -26,12 +26,12 @@ foreach ($users as $user) {
 if ($currentUser == FALSE)
 {
    echo "$usernamePassed is not a recognized username.";
- //  header("location: login.php");
+   die();
 }
 if ($passwordError == TRUE && $currentUser == TRUE)
 {
    echo "This password does not match the username's password.";
- //  header("location: login.php");
+   die();
 }
 
 if ($currentUser)
