@@ -3,8 +3,6 @@ session_start();
 // connect to db
 require('dbConnect.php');
 $db = get_db();
-if (isset($_SESSION["user"]))
-{
 
    $_SESSION["user"] = $usernamePassed;
    $stmt = $db->prepare("SELECT p.title FROM project p
@@ -14,7 +12,6 @@ if (isset($_SESSION["user"]))
    $stmt->execute();
    $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
    // go through each movie in the result and display it
-}
 
 ?>
 <!DOCTYPE html>
@@ -24,8 +21,6 @@ if (isset($_SESSION["user"]))
 </head>
 <body>
    <?php 
-   if (isset($_SESSION["user"]))
-   {
       echo "<h1>Projects</h1>";
       foreach ($projects as $project) 
       {
@@ -37,7 +32,6 @@ if (isset($_SESSION["user"]))
       }
       echo "<br><br>";
       echo "<a href='createProject.php'>Create Project</a>";
-   }
    ?>
 
 
