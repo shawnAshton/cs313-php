@@ -35,11 +35,16 @@ $db = get_db();
 </head>
 <body>
    <form id = "nameForm">
-      <h2>Add Names</h2>
+      <h2>Project Title</h2>
+      <input type="text" name="projectTitle"  placeholder="enter a title">
+      <h2>Enter The number of meetings you want to populate</h2>
+      <input type="text" name="totalMeetings"  placeholder="enter a title">
+
+      <h2>Add Names and Jobs</h2>
       <br/>
       <div id="textbox">
          <input type="text" name="names[]" id="input" placeholder="enter a name">
-         <input type="text" name="job[]" id="input" placeholder="enter a job">
+         <input type="text" name="job[]"  placeholder="enter a job">
          <input type="button" id="button" value="Add Name" onclick="addTextBoxes()"/>
       </div>
    </form>
