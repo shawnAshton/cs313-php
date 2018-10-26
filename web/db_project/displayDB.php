@@ -4,7 +4,7 @@ session_start();
 require('dbConnect.php');
 $db = get_db();
 
-   $_SESSION["user"] = $usernamePassed;
+   $usernamePassed $_SESSION["user"];
    $stmt = $db->prepare("SELECT p.title FROM project p
    JOIN program_user pu ON p.program_user_id = pu.id
    WHERE pu.username = :usernamePassed;");
