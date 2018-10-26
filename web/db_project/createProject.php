@@ -17,9 +17,9 @@ $db = get_db();
       newTextBoxName.setAttribute("type", "text");
       newTextBoxJob.setAttribute("type", "text");
 
-      newTextBoxName.setAttribute("name", "name[]");
+      newTextBoxName.setAttribute("name", "names[]");
       newTextBoxName.setAttribute("placeholder", "enter a name");
-      newTextBoxJob.setAttribute("name", "job[]");
+      newTextBoxJob.setAttribute("name", "jobs[]");
       newTextBoxJob.setAttribute("placeholder", "enter a job");
 
       var divTag = document.getElementById("textbox");
@@ -47,7 +47,7 @@ $db = get_db();
       <br/>
       <div id="textbox">
          <input type="text" name="names[]" id="input" placeholder="enter a name">
-         <input type="text" name="job[]"  placeholder="enter a job">
+         <input type="text" name="jobs[]"  placeholder="enter a job">
          <input type="button" id="button" value="Add Input Field" onclick="addTextBoxes()"/>
       </div>
       <input type="submit" value="Create Project">
