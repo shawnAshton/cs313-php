@@ -42,15 +42,15 @@ $db = get_db();
       <h2>Information:</h2>
       <p>Create a way to rotate jobs and people. For example if you are a college student, then you could rotate chores with your roomates.</p>
       <h3>New Project</h3>
-      <input type="text" name="projectTitle"  placeholder="enter a title">
+      <input type="text" name="projectTitle"  placeholder="enter a title" required>
       <h3>Enter The number of times you want to rotate jobs</h3>
-      <input type="text" name="totalMeetings"  placeholder="1-100" maxlength="3">
+      <input type="text" name="totalMeetings"  placeholder="1-100" maxlength="3" required>
 
       <h3>Add People Names and Jobs to rotate through</h3>
       <br/>
       <div id="textbox">
-         <input type="text" name="names[]" id="input" placeholder="enter a name">
-         <input type="text" name="jobs[]"  placeholder="enter a job">
+         <input type="text" name="names[]" id="input" placeholder="enter a name" required>
+         <input type="text" name="jobs[]"  placeholder="enter a job" required>
          <input type="button" id="button" value="Add Input Fields" onclick="addTextBoxes()"/>
       </div>
       <input type="submit" value="Create Project">
