@@ -7,7 +7,7 @@
    $newPassword = $_POST['newPassword'];
    $newPassword = htmlspecialchars($newPassword);
 
-   $query = "SELECT username FROM program_user WHERE username = :newUsername";
+   $query = "SELECT username FROM program_user WHERE username = :newUsername;";
    $stmt = $db->prepare($query);
    $stmt->bindValue(":newUsername", $newUsername, PDO::PARAM_STR);
    $stmt->execute();
@@ -21,7 +21,7 @@
 
    if($inputUnique){
       $query = "INSERT INTO program_user(username, password) 
-      VALUES (:newUsername, :newPassword";
+      VALUES (:newUsername, :newPassword;";
       $stmt = $db->prepare($query);
       $stmt->bindValue(":newUsername", $newUsername, PDO::PARAM_STR);
       $stmt->bindValue(":newPassword", $newPassword, PDO::PARAM_STR);
