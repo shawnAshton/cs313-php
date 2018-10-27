@@ -11,7 +11,6 @@ $db = get_db();
    $stmt->bindValue(":username", $username, PDO::PARAM_STR);
    $stmt->execute();
    $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
-   // go through each movie in the result and display it
 
 ?>
 <!DOCTYPE html>
@@ -39,10 +38,25 @@ $db = get_db();
 </html>
 
 <!-- TODO: 
-CREATE A WAY TO LOG IN
-CREATE A REMOVE INPUT FUNCTION? OR DEAL WITH EMPTY INPUT SO THAT THE DATABASE ISNT FILLED WITH TRASH
-CREATE A WAY TO DELETE A PROJECT
-have a link back to this page after submitting a project and then one before
+css!!!
 
+CREATE A REMOVE INPUT FUNCTION for name and box.
+   button stays at top
+
+create a way to prevent the word "projects" from showing up when a user has no projects.
+
+CREATE A WAY TO DELETE A PROJECT... that will erase jobs and rows in the job_worker table as well as project...
+
+have a link back to this page before submitting a project
+
+CREATE A WAY TO PREVENT A PERSON FROM CREATING A PORJECT if they didnt log in.
+
+
+
+comment all code nicely
+
+STRETCH
 a swap section, to swap 2 peoples jobs once the auto population has taken place.
+
+a way to have a project with a different amount of people and jobs
        -->
