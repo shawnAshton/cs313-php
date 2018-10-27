@@ -26,7 +26,8 @@ $stmt = $db->prepare($query);
 $stmt->bindValue(":user_id", $user_id, PDO::PARAM_INT);
 $stmt->bindValue(":projectTitle", $projectTitle, PDO::PARAM_STR);
 $stmt->execute();
-$new_project_id = $pdo->lastInsertId('project_id_seq');
+$new_project_id = $db->lastInsertId('project_id_seq');
+
 //insert names into worker
 $worker_id_list = [];
 foreach($names as $name)
@@ -36,7 +37,7 @@ foreach($names as $name)
    $stmt = $db->prepare($query);
    $stmt->bindValue(":name", $name);
    $stmt->execute();//I WAS HERE..THOUGHT PROCESS put the new id into an array for later.
-   $worker_id_list[]= $pdo->lastInsertId('worker_id_seq');
+   $worker_id_list[]= $db->lastInsertId('worker_id_seq');
 }
 
 //insert jobs into job
@@ -48,7 +49,7 @@ foreach($jobs as $job)
    $stmt = $db->prepare($query);
    $stmt->bindValue(":job", $job);
    $stmt->execute();//I WAS HERE..THOUGHT PROCESS put the new id into an array for later.
-   $job_id_list[]= $pdo->lastInsertId('job_id_seq');
+   $job_id_list[]= $db->lastInsertId('job_id_seq');
 }
 
 foreach ($worker_id_list as $id) {
