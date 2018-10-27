@@ -72,5 +72,6 @@ foreach($worker_id_list as $worker){
    }
    $job_offset += 1;
 }
+header("location: displayDB.php");
 ?>
 

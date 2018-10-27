@@ -38,12 +38,15 @@ $db = get_db();
 </head>
 <body>
    <form id = "nameForm" action="insertProject.php" method="POST">
-      <h2>New Project</h2>
+      <h1>Creating a New Project</h1>
+      <h2>Information:</h2>
+      <p>Create a way to rotate jobs and people. For example if you are a college student, then you could rotate chores with your roomates.</p>
+      <h3>New Project</h3>
       <input type="text" name="projectTitle"  placeholder="enter a title">
-      <h2>Enter The number of times you want to rotate jobs</h2>
+      <h3>Enter The number of times you want to rotate jobs</h3>
       <input type="text" name="totalMeetings"  placeholder="1-100" maxlength="3">
 
-      <h2>Add Names and Jobs to rotate through</h2>
+      <h3>Add People Names and Jobs to rotate through</h3>
       <br/>
       <div id="textbox">
          <input type="text" name="names[]" id="input" placeholder="enter a name">
