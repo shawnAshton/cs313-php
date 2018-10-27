@@ -7,7 +7,7 @@
    $newPassword = $_POST['newPassword'];
    $newPassword = htmlspecialchars($newPassword);
 
-   $query = "SELECT username FROM program_user WHERE usename = :newUsername";
+   $query = "SELECT username FROM program_user WHERE username = :newUsername";
    $stmt = $db->prepare($query);
    $stmt->bindValue(":newUsername", $newUsername, PDO::PARAM_STR);
    $stmt->execute();
