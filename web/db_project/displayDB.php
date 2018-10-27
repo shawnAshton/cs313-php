@@ -31,7 +31,7 @@ $db = get_db();
          echo $project_title . "</a></li>";
       }
       echo "<br><br>";
-      echo "<a href='createProject.php'>Create Project</a>";
+      echo "<a href='createProject.php'>New Job Rotation Project</a>";
    ?>
 
 
