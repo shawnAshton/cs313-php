@@ -51,12 +51,12 @@ have a link back to this page before submitting a project
 
 CREATE A WAY TO PREVENT A PERSON FROM CREATING A PORJECT if they didnt log in.
 
-
-
 comment all code nicely
 
-STRETCH
+STRETCH***********************************************************
 a swap section, to swap 2 peoples jobs once the auto population has taken place.
 
 a way to have a project with a different amount of people and jobs
+
+a way to have projects be time sensative... to delete stuff... so the database doesn't fill up to much..
        -->

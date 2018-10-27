@@ -51,7 +51,7 @@ $db = get_db();
       <div id="textbox">
          <input type="text" name="names[]" id="input" placeholder="enter a name" required>
          <input type="text" name="jobs[]"  placeholder="enter a job" required>
-         <input type="button" id="button" value="Add person and Job box" onclick="addTextBoxes()"/>
+         <input type="button" id="button" value="Add Person and Job box" onclick="addTextBoxes()"/>
       </div>
       <input type="submit" value="Create Project">
    </form>
