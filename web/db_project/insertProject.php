@@ -64,8 +64,9 @@ foreach($worker_id_list as $worker){
    for($i = 0; $i < $totalMeetings; $i++) {
       $indexToInsert = ($job_offset + $i) % sizeof($job_id_list);
       $job_id = $job_id_list[$indexToInsert];     
+      $meetingToInsert = $i + 1;
       $query = "INSERT INTO job_worker(worker_id, job_id, instance_of_meeting)
-      VALUES ($worker,$job_id,$i);";
+      VALUES ($worker,$job_id,$meetingToInsert);";
       $stmt = $db->prepare($query);
       $stmt->execute();
    }
