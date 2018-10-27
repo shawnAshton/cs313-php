@@ -33,7 +33,7 @@ foreach($names as $name)
 {
    $name = htmlspecialchars($name);
    $query = "INSERT INTO worker(name) VALUES(:name);";
-   $stmt = db->prepare($query);
+   $stmt = $db->prepare($query);
    $stmt->bindValue(":name", $name);
    $stmt->execute();//I WAS HERE..THOUGHT PROCESS put the new id into an array for later.
    $worker_id_list[]= $pdo->lastInsertId('worker_id_seq');
@@ -45,7 +45,7 @@ foreach($jobs as $job)
 {
    $job = htmlspecialchars($job);
    $query = "INSERT INTO job(job_title, project_id) VALUES(:job, $new_project_id);";
-   $stmt = db->prepare($query);
+   $stmt = $db->prepare($query);
    $stmt->bindValue(":job", $job);
    $stmt->execute();//I WAS HERE..THOUGHT PROCESS put the new id into an array for later.
    $job_id_list[]= $pdo->lastInsertId('job_id_seq');
