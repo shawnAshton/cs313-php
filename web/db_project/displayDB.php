@@ -38,15 +38,11 @@ $db = get_db();
 </body>
 </html>
 
-<!-- foreach ($projects as $project) {
-   $name = $project['name'];
-   $job = $project['job_title'];
-   $projectName = $project['title'];
-   echo "<li><p>$name - $job - $projectName</p></li>"; -->
+<!-- TODO: 
+CREATE A WAY TO LOG IN
+CREATE A REMOVE INPUT FUNCTION? OR DEAL WITH EMPTY INPUT SO THAT THE DATABASE ISNT FILLED WITH TRASH
+CREATE A WAY TO DELETE A PROJECT
+have a link back to this page after submitting a project and then one before
 
-<!--       $stmt = $db->prepare("SELECT w.name, j.job_title, jw.instance_of_meeting, p.title, pu.username FROM worker w
-      JOIN job_worker jw ON w.id = jw.worker_id
-      JOIN job j ON jw.job_id = j.id
-      JOIN project p ON j.project_id = p.id
-      JOIN program_user pu ON p.program_user_id = pu.id
-      WHERE p.title = 'Scouts';"); -->
+a swap section, to swap 2 peoples jobs once the auto population has taken place.
+       -->
