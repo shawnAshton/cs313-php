@@ -15,7 +15,7 @@
 
    $inputUnique = TRUE;
 
-   if(isset($user['username']){
+   if(isset($user['username'])){
       $inputUnique = FALSE;
    }
 
