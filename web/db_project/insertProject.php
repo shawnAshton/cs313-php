@@ -59,5 +59,17 @@ foreach ($job_id_list as $id) {
    echo "job: $id<br>";
 }
 //insert into job_worker...
+$job_offset = 0;
+foreach($worker_id_list as $worker){
+   for($i = 0; $i < $totalMeetings; $i++) {
+      $indexToInsert = ($job_offset + $i) % sizeof($job_id_list);
+      $job_id = $job_id_list[$indexToInsert];     
+      $query = "INSERT INTO job_worker(worker_id, job_id, instance_of_meeting)
+      VALUES ($worker,$job_id,$i);";
+      $stmt = $db->prepare($query);
+      $stmt->execute();
+   }
+   $job_offset += 1;
+}
 ?>
 
