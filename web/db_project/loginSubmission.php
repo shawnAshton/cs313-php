@@ -14,7 +14,7 @@ $user = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 if(isset($user))
 {
-   if(password_verify($usernamePassed, $user['password']))
+   if(password_verify($passwordPassed, $user['password']))
    {
       //correct
       $_SESSION["user"] = $usernamePassed;
