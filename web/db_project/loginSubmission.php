@@ -8,7 +8,7 @@ $passwordPassed = $_POST['password'];
 $usernamePassed = htmlspecialchars($usernamePassed);
 $passwordPassed = htmlspecialchars($passwordPassed);
 
-echo "username passed in = " . $usernamePassed . "\n";
+//echo "username passed in = " . $usernamePassed . "\n";
 $stmt = $db->prepare("SELECT username, password, id FROM program_user WHERE username = :usernamePassed;");
 $stmt->bindValue(":usernamePassed", $usernamePassed, PDO::PARAM_STR);
 $stmt->execute();
@@ -18,21 +18,21 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 foreach ($users as $user)
 {  
-   echo "user - " . $user['username'];
-   echo"<br>password sent in is -  $passwordPassed";
-   echo "<br>password - " . $user['password'];
+   // echo "user - " . $user['username'];
+   // echo"<br>password sent in is -  $passwordPassed";
+   // echo "<br>password - " . $user['password'];
    $databasePassword = $user['password'];
    if(password_verify($passwordPassed, $databasePassword))
    {
       //correct
       $_SESSION["user"] = $usernamePassed;
-      //header('location:displayDB.php');
-      echo "<br>1";
+      header('location:displayDB.php');
+      //echo "<br>1";
    }
    else
    {
-      //header('location:login.php');
-      echo "<br>2";
+      header('location:login.php');
+      //echo "<br>2";
       //incorrect
    }
 }
