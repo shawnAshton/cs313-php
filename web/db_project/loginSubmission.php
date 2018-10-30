@@ -19,7 +19,7 @@ foreach ($users as $user)
    echo "user - " . $user['username'];
    echo "\npassword - " . $user['password'];
    $databasePassword = $user['password'];
-   if(password_verify($passwordPassed, $databasePassword)
+   if(password_verify($passwordPassed, $databasePassword))
    {
       //correct
       $_SESSION["user"] = $usernamePassed;
