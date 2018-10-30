@@ -14,6 +14,7 @@ $user = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 if(isset($user))
 {  
+   echo "user - " . $user['username'];
    echo "password - " . $user['password'];
    if(password_verify($passwordPassed, $user['password']))
    {
