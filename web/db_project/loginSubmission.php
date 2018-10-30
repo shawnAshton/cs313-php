@@ -29,6 +29,10 @@ if(isset($user))
       //incorrect
    }
 }
+else
+{
+   echo '3';
+}
 
 
 
