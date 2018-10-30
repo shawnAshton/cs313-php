@@ -13,17 +13,19 @@ $stmt->execute();
 $user = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 if(isset($user))
-{
+{  
+   echo "password - " . $user['password'];
    if(password_verify($passwordPassed, $user['password']))
    {
       //correct
       $_SESSION["user"] = $usernamePassed;
       header('location:displayDB.php');
-
+      echo '1';
    }
    else
    {
       header('location:login.php');
+      echo '2';
       //incorrect
    }
 }
