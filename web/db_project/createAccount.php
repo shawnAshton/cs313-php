@@ -20,7 +20,7 @@
    }
 
    if($inputUnique){
-      $hashedPassword = password_hash('$newPassword', PASSWORD_DEFAULT);
+      $hashedPassword = password_hash($newPassword, PASSWORD_DEFAULT);
       $query = "INSERT INTO program_user(username, password) 
       VALUES (:newUsername, :newPassword);";
       $stmt = $db->prepare($query);
