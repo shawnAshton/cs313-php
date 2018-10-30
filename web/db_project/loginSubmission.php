@@ -32,10 +32,7 @@ foreach ($users as $user)
       //incorrect
    }
 }
-else
-{
-   echo '3';
-}
+
 
 
 
