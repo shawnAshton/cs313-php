@@ -27,11 +27,13 @@ foreach ($users as $user)
       //correct
       $_SESSION["user"] = $usernamePassed;
       header('location:displayDB.php');
+      die();
       //echo "<br>1";
    }
    else
    {
       header('location:login.php');
+      die();
       //echo "<br>2";
       //incorrect
    }
