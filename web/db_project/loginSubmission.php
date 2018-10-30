@@ -10,7 +10,7 @@ echo "username passed in = " . $usernamePassed . "\n";
 $stmt = $db->prepare("SELECT username, password, id FROM program_user WHERE username = :usernamePassed;");
 $stmt->bindValue(":usernamePassed", $usernamePassed, PDO::PARAM_STR);
 $stmt->execute();
-$user = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
 
