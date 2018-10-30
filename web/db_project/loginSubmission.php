@@ -36,6 +36,7 @@ foreach ($users as $user)
       //incorrect
    }
 }
+header('location:login.php');
 
 
 
