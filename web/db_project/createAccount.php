@@ -10,7 +10,7 @@
    $stmt = $db->prepare($query);
    $stmt->bindValue(":newUsername", $newUsername, PDO::PARAM_STR);
    $stmt->execute();
-   $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
+   $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
    $inputUnique = TRUE;
 
