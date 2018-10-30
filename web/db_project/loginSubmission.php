@@ -6,6 +6,8 @@ $db = get_db();
 $usernamePassed = $_POST['username'];
 $passwordPassed = $_POST['password'];
 $usernamePassed = htmlspecialchars($usernamePassed);
+$passwordPassed = htmlspecialchars($passwordPassed);
+
 echo "username passed in = " . $usernamePassed . "\n";
 $stmt = $db->prepare("SELECT username, password, id FROM program_user WHERE username = :usernamePassed;");
 $stmt->bindValue(":usernamePassed", $usernamePassed, PDO::PARAM_STR);
@@ -20,7 +22,7 @@ foreach ($users as $user)
    echo"<br>password sent in is -  $passwordPassed";
    echo "<br>password - " . $user['password'];
    $databasePassword = $user['password'];
-   if(password_verify('bob', $databasePassword))
+   if(password_verify($passwordPassed, $databasePassword))
    {
       //correct
       $_SESSION["user"] = $usernamePassed;

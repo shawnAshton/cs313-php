@@ -5,7 +5,6 @@
    $newUsername = $_POST['newUsername'];
    $newUsername = htmlspecialchars($newUsername);
    $newPassword = $_POST['newPassword'];
-   $newPassword = htmlspecialchars($newPassword);
 
    $query = "SELECT username FROM program_user WHERE username = :newUsername;";
    $stmt = $db->prepare($query);
