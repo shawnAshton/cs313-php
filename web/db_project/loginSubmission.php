@@ -23,12 +23,12 @@ foreach ($users as $user)
       //correct
       $_SESSION["user"] = $usernamePassed;
       //header('location:displayDB.php');
-      echo '1';
+      echo '\n1';
    }
    else
    {
       //header('location:login.php');
-      echo '2';
+      echo '\n2';
       //incorrect
    }
 }
