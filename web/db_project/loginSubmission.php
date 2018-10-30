@@ -11,7 +11,10 @@ $stmt = $db->prepare("SELECT username, password, id FROM program_user WHERE user
 $stmt->bindValue(":usernamePassed", $usernamePassed, PDO::PARAM_STR);
 $stmt->execute();
 $user = $stmt->fetchAll(PDO::FETCH_ASSOC);
-if($user)
+
+
+
+foreach ($users as $user)
 {  
    echo "user - " . $user['username'];
    echo "password - " . $user['password'];
