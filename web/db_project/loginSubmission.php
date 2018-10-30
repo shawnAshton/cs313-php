@@ -17,19 +17,20 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 foreach ($users as $user)
 {  
    echo "user - " . $user['username'];
-   echo "\npassword - " . $user['password'];
+   echo"<br>password sent in is... $passwordPassed";
+   echo "<br>password - " . $user['password'];
    $databasePassword = $user['password'];
    if(password_verify($passwordPassed, $databasePassword))
    {
       //correct
       $_SESSION["user"] = $usernamePassed;
       //header('location:displayDB.php');
-      echo "\n1";
+      echo "<br>1";
    }
    else
    {
       //header('location:login.php');
-      echo "\n2";
+      echo "<br>2";
       //incorrect
    }
 }
