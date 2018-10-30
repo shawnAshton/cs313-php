@@ -20,11 +20,12 @@
    }
 
    if($inputUnique){
+      $hashedPassword = password_hash('$newPassword', PASSWORD_DEFAULT);
       $query = "INSERT INTO program_user(username, password) 
       VALUES (:newUsername, :newPassword);";
       $stmt = $db->prepare($query);
       $stmt->bindValue(":newUsername", $newUsername, PDO::PARAM_STR);
-      $stmt->bindValue(":newPassword", $newPassword, PDO::PARAM_STR);
+      $stmt->bindValue(":newPassword", $hashedPassword, PDO::PARAM_STR);
       $stmt->execute();
       header("location:login.php");
       //TODO: link to login page.

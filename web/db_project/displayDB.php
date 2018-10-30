@@ -38,6 +38,11 @@ $db = get_db();
 </html>
 
 <!-- TODO: 
+
+password hashing and edit table for length bigger than 60... 255 good...
+
+workers have a user..
+
 css!!!
 
 CREATE A REMOVE INPUT FUNCTION for name and box.
@@ -50,6 +55,8 @@ CREATE A WAY TO DELETE A PROJECT... that will erase jobs and rows in the job_wor
 have a link back to this page before submitting a project
 
 CREATE A WAY TO PREVENT A PERSON FROM CREATING A PORJECT if they didnt log in.
+
+Make sure the number input is a number, not a string or something else.
 
 comment all code nicely
 
