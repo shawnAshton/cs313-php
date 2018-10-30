@@ -17,10 +17,10 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 foreach ($users as $user)
 {  
    echo "user - " . $user['username'];
-   echo"<br>password sent in is... $passwordPassed";
+   echo"<br>password sent in is -  $passwordPassed";
    echo "<br>password - " . $user['password'];
    $databasePassword = $user['password'];
-   if(password_verify($passwordPassed, $databasePassword))
+   if(password_verify($databasePassword, $databasePassword))
    {
       //correct
       $_SESSION["user"] = $usernamePassed;
