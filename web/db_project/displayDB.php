@@ -39,9 +39,9 @@ $db = get_db();
 
 <!-- TODO: 
 
-password hashing and edit table for length bigger than 60... 255 good...
+error messages appear when creating account and when not able to log in... session variables...
 
-workers have a user..
+workers have a user... add to table...and to insert...
 
 css!!!
 
