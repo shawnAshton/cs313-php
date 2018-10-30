@@ -6,7 +6,7 @@ $db = get_db();
 $usernamePassed = $_POST['username'];
 $passwordPassed = $_POST['password'];
 $usernamePassed = htmlspecialchars($usernamePassed);
-echo "username passed in = " . $usernamePassed;
+echo "username passed in = " . ":usernamePassed";
 $stmt = $db->prepare("SELECT username, password, id FROM program_user WHERE username = :usernamePassed;");
 $stmt->bindValue(":usernamePassed", $usernamePassed, PDO::PARAM_STR);
 $stmt->execute();
