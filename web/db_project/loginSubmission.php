@@ -19,12 +19,12 @@ if(isset($user))
    {
       //correct
       $_SESSION["user"] = $usernamePassed;
-      header('location:displayDB.php');
+      //header('location:displayDB.php');
       echo '1';
    }
    else
    {
-      header('location:login.php');
+      //header('location:login.php');
       echo '2';
       //incorrect
    }
