@@ -20,7 +20,7 @@ foreach ($users as $user)
    echo"<br>password sent in is -  $passwordPassed";
    echo "<br>password - " . $user['password'];
    $databasePassword = $user['password'];
-   if(password_verify($databasePassword, $databasePassword))
+   if(password_verify('bob', $databasePassword))
    {
       //correct
       $_SESSION["user"] = $usernamePassed;
