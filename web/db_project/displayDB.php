@@ -5,7 +5,7 @@ require('dbConnect.php');
 $db = get_db();
 
    $username = $_SESSION["user"];
-   $stmt = $db->prepare("SELECT p.title FROM project p
+   $stmt = $db->prepare("SELECT p.title, p.id FROM project p
    JOIN program_user pu ON p.program_user_id = pu.id
    WHERE pu.username = :username;");
    $stmt->bindValue(":username", $username, PDO::PARAM_STR);
