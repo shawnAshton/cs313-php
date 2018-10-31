@@ -34,9 +34,10 @@ $worker_id_list = [];
 foreach($names as $name)
 {
    $name = htmlspecialchars($name);
-   $query = "INSERT INTO worker(name) VALUES(:name);";
+   $query = "INSERT INTO worker(name,program_user_id) VALUES(:name, :user_id);";
    $stmt = $db->prepare($query);
    $stmt->bindValue(":name", $name);
+   $stmt->bindValue(":user_id", $user_id);
    $stmt->execute();//I WAS HERE..THOUGHT PROCESS put the new id into an array for later.
    $worker_id_list[]= $db->lastInsertId('worker_id_seq');
 }
