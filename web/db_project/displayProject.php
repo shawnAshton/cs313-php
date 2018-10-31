@@ -2,11 +2,11 @@
 // connect to db
 require('dbConnect.php');
 $db = get_db();
-$project_id = $_GET['id'];
+$id = $_GET['id'];
 $project_id = htmlspecialchars($projectName);
 $projectName = $_GET['title'];
 $projectName = htmlspecialchars($projectName);
-echo "pid: $project_id
+echo "pid: $id
 <br>pn: $projectName";
 // $stmt = $db->prepare("SELECT w.name, j.job_title, jw.instance_of_meeting, p.title, p.id,p.program_user_id,pu.id, pu.username,
 //                       j.project_id, j.id, jw.job_id, w.id, jw.worker_id FROM worker w
