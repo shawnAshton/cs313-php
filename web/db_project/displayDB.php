@@ -54,7 +54,7 @@ CREATE A WAY TO DELETE A PROJECT... that will erase jobs and rows in the job_wor
 
 have a link back to this page before submitting a project
 
-CREATE A WAY TO PREVENT A PERSON FROM CREATING A PORJECT if they didnt log in.
+CREATE A WAY TO PREVENT A PERSON FROM CREATING A PORJECT if they didnt log in... as well as prevent them from being on home page
 
 Make sure the number input is a number, not a string or something else.
 
