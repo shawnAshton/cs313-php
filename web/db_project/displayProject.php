@@ -6,7 +6,8 @@ $project_id = $_GET['project_id'];
 $project_id = htmlspecialchars($projectName);
 $projectName = $_GET['project_title'];
 $projectName = htmlspecialchars($projectName);
-echo "pid: $project_id<br>pn: $projectName";
+echo "pid: $project_id
+<br>pn: $projectName";
 // $stmt = $db->prepare("SELECT w.name, j.job_title, jw.instance_of_meeting, p.title, p.id,p.program_user_id,pu.id, pu.username,
 //                       j.project_id, j.id, jw.job_id, w.id, jw.worker_id FROM worker w
 //    JOIN job_worker jw ON w.id = jw.worker_id
