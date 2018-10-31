@@ -3,7 +3,7 @@
 require('dbConnect.php');
 $db = get_db();
 $id = $_GET['id'];
-$project_id = htmlspecialchars($projectName);
+$id = htmlspecialchars($id);
 $projectName = $_GET['title'];
 $projectName = htmlspecialchars($projectName);
 echo "pid: $id
