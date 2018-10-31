@@ -26,7 +26,9 @@ foreach ($users as $user)
    {
       //correct
       $_SESSION["user"] = $usernamePassed;
+      $_SESSION["user_id"] = $user["id"];
       header('location:displayDB.php');
+
       die();
       //echo "<br>1";
    }
