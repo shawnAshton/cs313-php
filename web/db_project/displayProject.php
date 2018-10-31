@@ -12,7 +12,7 @@ $stmt = $db->prepare("SELECT w.name, j.job_title, jw.instance_of_meeting, p.titl
    JOIN job j ON jw.job_id = j.id
    JOIN project p ON j.project_id = p.id
    JOIN program_user pu ON p.program_user_id = pu.id
-   WHERE p.id = $project_id
+   WHERE p.id = :project_id
    ORDER BY jw.instance_of_meeting, w.name;");
 $stmt->bindValue(":project_id", $project_id, PDO::PARAM_STR); //adds single quotes
 $stmt->execute();
