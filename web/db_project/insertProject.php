@@ -3,11 +3,12 @@
 session_start();
 //get variables...
 $user = $_SESSION["user"];
+echo "USER IS - $user";
 $user_id = $_SESSION["user_id"];
 $projectTitle = $_POST["projectTitle"];
 $totalMeetings = $_POST["totalMeetings"];
 $names = $_POST["names"];
-$jobs = $_POST["jobs"];
+$jobs = $_POST["jobs"]; 
 
 //cleanse variables
 $user = htmlspecialchars($user);
