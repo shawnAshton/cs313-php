@@ -2,20 +2,21 @@
 // connect to db
 require('dbConnect.php');
 $db = get_db();
-$projectName = $_GET['projectName'];
+$project_id = $_GET['project_id'];
+$project_id = htmlspecialchars($projectName);
+$projectName = $_GET['project_id'];
 $projectName = htmlspecialchars($projectName);
 $stmt = $db->prepare("SELECT w.name, j.job_title, jw.instance_of_meeting, p.title, pu.username FROM worker w
    JOIN job_worker jw ON w.id = jw.worker_id
    JOIN job j ON jw.job_id = j.id
    JOIN project p ON j.project_id = p.id
    JOIN program_user pu ON p.program_user_id = pu.id
-   WHERE p.title = :projectName
+   WHERE p.id = :project_id
    ORDER BY jw.instance_of_meeting, w.name;");
-$stmt->bindValue(":projectName", $projectName, PDO::PARAM_STR); //adds single quotes
+$stmt->bindValue(":project_id", $project_id, PDO::PARAM_STR); //adds single quotes
 $stmt->execute();
 $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 // go through each movie in the result and display it
-
 
 ?>
 <!DOCTYPE html>
@@ -27,9 +28,8 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
    <h1>
       <?php echo $projectName;
-
       ?>   
-      </h1>
+   </h1>
 
    <ul>
 <?php

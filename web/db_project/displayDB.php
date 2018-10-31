@@ -24,10 +24,14 @@ $db = get_db();
       foreach ($projects as $project) 
       {
          $project_title = $project['title'];
-         echo "<li><a href=";
-         echo '"displayProject.php?projectName=';
-         echo "$project_title" . '">';
-         echo $project_title . "</a></li>";
+         $project_id = $project['id'];
+
+         echo "<li><a href=displayProject.php?project_id=$project_id&projectName=$projectName>$project_title</a></li>";
+
+         // echo "<li><a href=";
+         // echo '"displayProject.php?project_id=';
+         // echo "$project_id" . '">';
+         // echo $project_title . "</a></li>";
       }
       echo "<br><br>";
       echo "<a href='createProject.php'>New Job Rotation Project</a>";
@@ -39,9 +43,13 @@ $db = get_db();
 
 <!-- TODO: 
 
+workers have a user... add to table...and to insert...
+
 error messages appear when creating account and when not able to log in... session variables...
 
-workers have a user... add to table...and to insert...
+people cant have a project with the same name as another project.... or set it up so info is set up with id rather than project name..
+
+logout method...
 
 css!!!
 
