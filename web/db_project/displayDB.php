@@ -25,8 +25,9 @@ $db = get_db();
       {
          $project_title = $project['title'];
          $project_id = $project['id'];
-
-         echo "pid: $project_id<br>pt: $project_title";
+         echo $project['id'];
+         echo "<br>pid: $project_id
+         <br>pt: $project_title";
          echo "<li><a href='displayProject.php?project_id=$project_id&project_title=$project_title'>$project_title</a></li>";
 
          // echo "<li><a href=";
