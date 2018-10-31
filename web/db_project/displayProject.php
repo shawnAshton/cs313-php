@@ -4,7 +4,7 @@ require('dbConnect.php');
 $db = get_db();
 $project_id = $_GET['project_id'];
 $project_id = htmlspecialchars($projectName);
-$projectName = $_GET['project_id'];
+$projectName = $_GET['project_title'];
 $projectName = htmlspecialchars($projectName);
 $stmt = $db->prepare("SELECT w.name, j.job_title, jw.instance_of_meeting, p.title, pu.username FROM worker w
    JOIN job_worker jw ON w.id = jw.worker_id
