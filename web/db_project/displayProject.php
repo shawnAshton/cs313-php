@@ -2,9 +2,9 @@
 // connect to db
 require('dbConnect.php');
 $db = get_db();
-$project_id = $_GET['project_id'];
+$project_id = $_GET['id'];
 $project_id = htmlspecialchars($projectName);
-$projectName = $_GET['project_title'];
+$projectName = $_GET['title'];
 $projectName = htmlspecialchars($projectName);
 echo "pid: $project_id
 <br>pn: $projectName";
