@@ -42,8 +42,6 @@ $db = get_db();
 
 <!-- TODO: 
 
-workers have a user... add to table...and to insert...
-
 error messages appear when creating account and when not able to log in... session variables...
 
 people cant have a project with the same name as another project.... or set it up so info is set up with id rather than project name..
@@ -64,6 +62,8 @@ have a link back to this page before submitting a project
 CREATE A WAY TO PREVENT A PERSON FROM CREATING A PORJECT if they didnt log in... as well as prevent them from being on home page
 
 Make sure the number input is a number, not a string or something else.
+
+workers have a user.....when inserting a worker, check if there is already one by that name
 
 comment all code nicely
 
