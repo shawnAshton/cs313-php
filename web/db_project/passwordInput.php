@@ -22,5 +22,6 @@
       New Password: <input type="text" name="newPassword"><br><br>
    <input type="submit" value="Create">
    </form>
+   <br><a style="background-color: #4CAF50; color: white;" href='login.php'>Have an Account?</a>
 </body>
 </html>
