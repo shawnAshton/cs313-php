@@ -43,7 +43,7 @@
       {
          $project_title = $project['title'];
          $project_id = $project['id'];
-         echo "<a href='displayProject.php?id=$project_id&title=$project_title'>$project_title</a><br>";
+         echo "<a href='displayProject.php?id=$project_id&title=$project_title'>$project_title</a><br><br>";
 
          // echo "<li><a href=";
          // echo '"displayProject.php?project_id=';
