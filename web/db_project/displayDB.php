@@ -22,7 +22,14 @@ $db = get_db();
    <?php 
    if(count($projects) > 0)
    {
-      echo "<h1>Projects</h1>";
+      if(count($projects) == 1)
+      {
+         echo "<h1>My Project</h1>";
+      }
+      else
+      {
+         echo "<h1>My Projects</h1>";
+      }
    }
       foreach ($projects as $project) 
       {
