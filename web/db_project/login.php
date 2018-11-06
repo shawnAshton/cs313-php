@@ -19,7 +19,7 @@
    <br><br><br>
    <form action="loginSubmission.php" method="POST">
       Username: <input type="text" name="username"><br><br>
-      Password: <input type="text" name="password"><br>
+      Password: <input type="text" name="password"><br><br>
       <input type="submit" name="submit" value="login">
    </form>
    <a href="passwordInput.php">Create an Account</a>
