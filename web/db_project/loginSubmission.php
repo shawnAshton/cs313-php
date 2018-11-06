@@ -34,14 +34,14 @@ foreach ($users as $user)
    }
    else
    {
-      $_SESSION["login_error"] = "Your username or password was incorrect";
+      $_SESSION["login_error"] = "Your username or password was incorrect, try again.<br>";
       header('location:login.php');
       die();
       //echo "<br>2";
       //incorrect
    }
 }
-$_SESSION["login_error"] = "Your username or password was incorrect";
+$_SESSION["login_error"] = "Your username or password was incorrect, try again.<br>";
 header('location:login.php');
 
 
