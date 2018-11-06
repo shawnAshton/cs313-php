@@ -6,7 +6,7 @@
 
    if(!isset($_SESSION["user"]))
    {
-      $_SESSION["login_error"] = "You need to login before you can see your projects.<br><br>";
+      $_SESSION["login_error"] = "You need to login before you can see your projects!<br><br>";
       header('location:login.php');
    }
    $username = $_SESSION["user"];
