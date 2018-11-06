@@ -41,6 +41,7 @@ foreach ($users as $user)
       //incorrect
    }
 }
+$_SESSION["login_error"] = "Your username or password was incorrect";
 header('location:login.php');
 
 
