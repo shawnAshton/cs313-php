@@ -35,7 +35,10 @@ $db = get_db();
 
    </script>
 <head>
-   <title>Create projects</title>
+   <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="assignMe.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Create project</title>
 </head>
 <body>
    <form id = "nameForm" action="insertProject.php" method="POST">
