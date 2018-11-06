@@ -1,6 +1,11 @@
 <?php
 // connect to db
 session_start();
+if(!isset($_SESSION["user"]))
+{
+   $_SESSION["login_error"] = "You need to login before you can create a project!<br><br>";
+   header('location:login.php');
+}
 $user = $_SESSION["user"];
 require('dbConnect.php');
 $db = get_db();

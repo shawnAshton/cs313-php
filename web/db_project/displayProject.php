@@ -1,7 +1,7 @@
 <?php
 // connect to db
-   session_start();
    require('dbConnect.php');
+   session_start();
    if(!isset($_SESSION["user"]))
    {
       $_SESSION["login_error"] = "You need to login before you can see your projects!<br><br>";
