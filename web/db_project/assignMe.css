@@ -9,3 +9,9 @@ input[type="submit"]{
    border-radius: 5px;
    background-color: #FFF283;
 }
+
+a{
+   border-style: solid;
+   border-radius: 5px;
+   background-color: #FFF283;
+}
