@@ -42,24 +42,24 @@
       ?>   
    </h1>
 
-   <ul>
-<?php
-$instance = 0;
-foreach ($projects as $project) {
-   $name = $project['name'];
-   $job = $project['job_title'];
-   $projectName = $project['title'];
-   $instance_of_meeting = $project['instance_of_meeting'];
-   if($instance != $instance_of_meeting)
-   {
-      echo "<br><h4>Rotation # $instance_of_meeting</h4>"; 
-      $instance = $instance_of_meeting;
-   }
-   echo "<li>$name - $job</li>";
+   <div style="display:inline-block;text-align: left;"><ul>
+      <?php
+      $instance = 0;
+      foreach ($projects as $project) {
+         $name = $project['name'];
+         $job = $project['job_title'];
+         $projectName = $project['title'];
+         $instance_of_meeting = $project['instance_of_meeting'];
+         if($instance != $instance_of_meeting)
+         {
+            echo "<br><h4>Rotation # $instance_of_meeting</h4>"; 
+            $instance = $instance_of_meeting;
+         }
+         echo "<li>$name - $job</li>";
 
-}
-?>
-   </ul>
+      }
+      ?>
+   </ul></div>
 
 </body>
 </html>
