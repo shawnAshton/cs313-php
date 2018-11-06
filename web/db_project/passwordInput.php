@@ -16,10 +16,11 @@
    <title>Create an Account</title>
 </head>
 <body>
+   <h1>Create Your Account</h1><br><br><br>
    <form action="createAccount.php" method="POST">
       New Username: <input type="text" name="newUsername"><br><br>
       New Password: <input type="text" name="newPassword"><br><br>
-   <input type="submit" value="Create Account">
+   <input type="submit" value="Create">
    </form>
 </body>
 </html>
