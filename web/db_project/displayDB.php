@@ -38,6 +38,7 @@
       {
          echo "<h1>My Projects</h1>";
       }
+      echo "<hr>";
    }
       foreach ($projects as $project) 
       {
