@@ -68,6 +68,7 @@ $db = get_db();
       </div>
       <br>
       <input type="submit" value="Create Project">
+      <a style="background-color: #4CAF50; color: white;" href="displayDB.php">Back To My Projects</a>
    </form>
    <ul>
 

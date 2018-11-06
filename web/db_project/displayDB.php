@@ -68,7 +68,7 @@ people cant have a project with the same name as another project.... or set it u
 
 logout method...!!!!!!!!!!!!!!!!!!!CHECK!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-css!!!
+css!!!CHECK!!!!!!!!!
 
 CREATE A REMOVE INPUT FUNCTION for name and box.
    button stays at top
