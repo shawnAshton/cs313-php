@@ -1,14 +1,21 @@
-CREATE TABLE worker
-(
-   id SERIAL PRIMARY KEY NOT NULL
-   ,name VARCHAR(50) NOT NULL
-);
+drop table job_worker;
+drop table job;
+drop table worker;
+drop table project;
+drop table program_user;
 
 CREATE TABLE program_user
 (
    id SERIAL PRIMARY KEY NOT NULL
    ,username VARCHAR(50) UNIQUE NOT NULL 
-   ,password VARCHAR(50) NOT NULL
+   ,password VARCHAR(256) NOT NULL
+);
+
+CREATE TABLE worker
+(
+   id SERIAL PRIMARY KEY NOT NULL
+   ,name VARCHAR(50) NOT NULL
+   ,program_user_id INT NOT NULL REFERENCES program_user(id)
 );
 
 CREATE TABLE project
@@ -25,12 +32,27 @@ CREATE TABLE job
    ,project_id INT NOT NULL REFERENCES project(id)
 );
 
+
 CREATE TABLE job_worker
 (
    job_id INT NOT NULL REFERENCES job(id)
    ,worker_id INT NOT NULL REFERENCES worker(id)
    ,instance_of_meeting INT NOT NULL
 );
+
+
+
+delete from job_worker;
+delete from job;
+delete from worker;
+delete from project;
+delete from program_user;
+
+   -- psql
+
+ALTER TABLE program_user 
+ALTER COLUMN password TYPE
+VARCHAR (256);
 
 
 INSERT INTO worker(name) VALUES
@@ -123,3 +145,21 @@ SELECT username, password FROM program_user;
 SELECT p.title FROM project p
    JOIN program_user pu ON p.program_user_id = pu.id
    WHERE pu.username = 'priest advisor';
+
+SELECT * FROM project p
+   JOIN program_user pu ON p.program_user_id = pu.id;
+
+
+SELECT w.name, j.job_title, jw.instance_of_meeting, p.title, p.id,p.program_user_id,pu.id, pu.username,
+                      j.project_id, j.id, jw.job_id, w.id, jw.worker_id FROM worker w
+   JOIN job_worker jw ON w.id = jw.worker_id
+   JOIN job j ON jw.job_id = j.id
+   JOIN project p ON j.project_id = p.id
+   JOIN program_user pu ON p.program_user_id = pu.id
+   WHERE p.id = 6
+   ORDER BY jw.instance_of_meeting, w.name;
+
+
+SELECT name FROM worker w
+   JOIN program_user pu ON w.program_user_id = pu.id
+   WHERE pu.username = 'helpLab';
