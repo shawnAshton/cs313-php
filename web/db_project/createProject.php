@@ -52,6 +52,7 @@ $db = get_db();
       <h1>Creating a New Project</h1>
       <h2>Information:</h2>
       <p>Create a way to rotate jobs and people. For example if you are a college student, then you could rotate chores with your roomates.</p>
+      <a style="background-color: #4CAF50; color: white;" href="displayDB.php">Back To My Projects</a>
       <hr>
       <h3>Group name</h3>
       <input type="text" name="projectTitle"  placeholder="enter a title" required>
@@ -68,7 +69,6 @@ $db = get_db();
       </div>
       <br>
       <input type="submit" value="Create Project"><br>
-      <a style="background-color: #4CAF50; color: white;" href="displayDB.php">Back To My Projects</a>
    </form>
    <ul>
 
