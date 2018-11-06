@@ -51,7 +51,7 @@
          // echo "$project_id" . '">';
          // echo $project_title . "</a></li>";
       }
-      echo "<br><br>";
+      echo "<br><br><hr>";
       echo "<a style='background-color: #4CAF50; color: white;' href='createProject.php'>New Job Rotation Project</a>";
    ?>
 <br><br>
