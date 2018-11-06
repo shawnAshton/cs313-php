@@ -34,6 +34,7 @@ foreach ($users as $user)
    }
    else
    {
+      $_SESSION["login_error"] = "Your username or password was incorrect";
       header('location:login.php');
       die();
       //echo "<br>2";

@@ -1,3 +1,11 @@
+<?php
+   session_start();
+   if(isset($_SESSION["login_error"]))
+   {
+      echo $_SESSION["login_error"];
+   }
+   session_destroy();
+?>
 <!DOCTYPE html>
 <html>
 <head>
