@@ -64,6 +64,7 @@ $db = get_db();
          <input type="text" name="jobs[]"  placeholder="enter a job" required>
          
       </div>
+      <br>
       <input type="submit" value="Create Project">
    </form>
    <ul>
