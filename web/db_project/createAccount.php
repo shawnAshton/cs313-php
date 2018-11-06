@@ -1,6 +1,7 @@
 <?php
    // connect to db
    require('dbConnect.php');
+   session_start();
    $db = get_db();
    $newUsername = $_POST['newUsername'];
    $newUsername = htmlspecialchars($newUsername);
@@ -30,7 +31,7 @@
       //TODO: link to login page.
    }
    else{
-      echo "ERROR";
+      $_SESSION["error_create"] = "An account with that username already exists.";
       header("location:passwordInput.php");
       //TODO: link back to password input for creation
    }

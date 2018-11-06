@@ -1,3 +1,12 @@
+<?php
+   session_start();
+   if(isset($_SESSION["error_create"]))
+   {
+      echo $_SESSION["error_create"];
+   }
+   session_destroy();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
