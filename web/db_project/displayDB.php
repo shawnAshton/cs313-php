@@ -24,7 +24,7 @@
    <meta charset="utf-8">
    <link rel="stylesheet" type="text/css" href="assignMe.css">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Projects</title>
+   <title>My Projects</title>
 </head>
 <body>
    <?php 

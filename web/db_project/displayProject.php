@@ -41,7 +41,7 @@
       <?php echo $projectName;
       ?>   
    </h1>
-   <a style="background-color: #4CAF50; color: white;" href="displayDB.php">Back to Home</a>
+   <a style="background-color: #4CAF50; color: white;" href="displayDB.php">My Projects</a>
    <hr>
 
    <div style="display:inline-block;text-align: left;"><ul>
