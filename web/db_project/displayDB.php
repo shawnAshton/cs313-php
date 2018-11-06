@@ -35,7 +35,7 @@ $db = get_db();
       echo "<br><br>";
       echo "<a href='createProject.php'>New Job Rotation Project</a>";
    ?>
-<br>
+<br><br>
 <a href='login.php'>logout</a>
 
 </body>
