@@ -23,6 +23,7 @@ $db = get_db();
       newTextBoxName.setAttribute("type", "text");
       newTextBoxName.setAttribute("name", "names[]");
       newTextBoxName.setAttribute("placeholder", "enter a name");
+      newTextBoxName.setAttribute("required", "true");
       newTextBoxJob.setAttribute("type", "text");
       newTextBoxJob.setAttribute("name", "jobs[]");
       newTextBoxJob.setAttribute("placeholder", "enter a job");
