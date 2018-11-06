@@ -31,7 +31,7 @@
       //TODO: link to login page.
    }
    else{
-      $_SESSION["error_create"] = "An account with that username already exists.";
+      $_SESSION["error_create"] = "An account with that username already exists.<br><br>";
       header("location:passwordInput.php");
       //TODO: link back to password input for creation
    }
