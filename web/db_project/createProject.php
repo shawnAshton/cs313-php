@@ -32,6 +32,7 @@ $db = get_db();
       divTag.appendChild(newTextBoxName);
       divTag.appendChild(newTextBoxJob);
       divTag.insertBefore(document.createElement("BR"), newTextBoxName);
+      divTag.insertBefore(document.createElement("BR"), newTextBoxName);
       // divTag.insertBefore(newTextBoxName, button);
       // divTag.insertBefore(newTextBoxJob, button);
       // divTag.insertBefore(document.createTextNode(" "), button);
