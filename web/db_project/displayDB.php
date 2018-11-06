@@ -35,16 +35,17 @@ $db = get_db();
       echo "<br><br>";
       echo "<a href='createProject.php'>New Job Rotation Project</a>";
    ?>
-
+<br>
+<a href='login.php'>logout</a>
 
 </body>
 </html>
 
 <!-- TODO: 
 
-error messages appear when creating account and when not able to log in... session variables...
+error messages appear when creating account and when not able to log in... session variables... !!!!!!!!!!!!!!!!CHECK!!!!!!!!!!!!!!!!!!!
 
-people cant have a project with the same name as another project.... or set it up so info is set up with id rather than project name..
+people cant have a project with the same name as another project.... or set it up so info is set up with id rather than project name..!!!!!!!!!!!!!!!CHECk!!!!!!!!!!!!!!!!!!!!
 
 logout method...
 
