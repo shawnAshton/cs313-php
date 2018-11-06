@@ -1,11 +1,11 @@
 <?php
 // connect to db
 require('dbConnect.php');
-// if(!isset($_SESSION["user"]))
-// {
-//    $_SESSION["login_error"] = "You need to login before you can see your projects!<br><br>";
-//    header('location:login.php');
-// }
+if(!isset($_SESSION["user"]))
+{
+   $_SESSION["login_error"] = "You need to login before you can see your projects!<br><br>";
+   header('location:login.php');
+}
 $db = get_db();
 $id = $_GET['id'];
 $id = htmlspecialchars($id);
