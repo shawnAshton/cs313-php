@@ -20,7 +20,7 @@
       Username: <input type="text" name="username"><br><br>
       Password: <input type="text" name="password"><br>
       <input type="submit" name="submit" value="login">
-   </form></div>
-   <a href="passwordInput.php">Create an Account</a>
+   </form>
+   <a href="passwordInput.php">Create an Account</a></div>
 </body>
 </html>
