@@ -18,8 +18,8 @@
    ?>
 <br><br><br>
    <form action="createAccount.php" method="POST">
-      New Username: <input type="text" name="newUsername"><br><br>
-      New Password: <input type="text" name="newPassword"><br><br>
+      New Username: <input type="text" name="newUsername" required><br><br>
+      New Password: <input type="text" name="newPassword" required><br><br>
    <input type="submit" value="Create">
    </form>
    <br><a style="background-color: #4CAF50; color: white;" href='login.php'>Back to Login</a>
