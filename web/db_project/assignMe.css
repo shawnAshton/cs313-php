@@ -12,6 +12,10 @@ input[type="submit"]{
 
 a{
    border-style: solid;
+   border-width: 1px;
    border-radius: 5px;
    background-color: #FFF283;
+   color: black;
+   text-decoration: none;
+   display: inline-block;
 }
