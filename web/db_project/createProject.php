@@ -26,7 +26,7 @@ $db = get_db();
       newTextBoxJob.setAttribute("type", "text");
       newTextBoxJob.setAttribute("name", "jobs[]");
       newTextBoxJob.setAttribute("placeholder", "enter a job");
-      newTextBoxJob.setAttribute("required", "trueS");
+      newTextBoxJob.setAttribute("required", "true");
 
       var divTag = document.getElementById("textbox");
       divTag.appendChild(newTextBoxName);
