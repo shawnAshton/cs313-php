@@ -22,6 +22,6 @@
       Password: <input type="text" name="password"><br><br>
       <input type="submit" name="submit" value="login">
    </form><br>
-   <a href="passwordInput.php">Create an Account</a>
+   <a style="background-color: #4CAF50;" href="passwordInput.php">Create an Account</a>
 </body>
 </html>
