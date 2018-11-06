@@ -29,9 +29,9 @@ $db = get_db();
       newTextBoxJob.setAttribute("required", "trueS");
 
       var divTag = document.getElementById("textbox");
-      divTag.appendChild(newTextBoxJob);
       divTag.appendChild(newTextBoxName);
-      divTag.insertBefore(document.createElement("BR"), newTextBoxJob);
+      divTag.appendChild(newTextBoxJob);
+      divTag.insertBefore(document.createElement("BR"), newTextBoxName);
       // divTag.insertBefore(newTextBoxName, button);
       // divTag.insertBefore(newTextBoxJob, button);
       // divTag.insertBefore(document.createTextNode(" "), button);
