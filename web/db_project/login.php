@@ -1,11 +1,3 @@
-<?php
-   session_start();
-   if(isset($_SESSION["login_error"]))
-   {
-      echo $_SESSION["login_error"];
-   }
-   session_destroy();
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +8,14 @@
 </head>
 <body>
    <h1>WELCOME TO ASSIGN ME</h1>
+   <?php
+      session_start();
+      if(isset($_SESSION["login_error"]))
+      {
+         echo $_SESSION["login_error"];
+      }
+      session_destroy();
+   ?>
    <br><br><br>
    <form action="loginSubmission.php" method="POST">
       Username: <input type="text" name="username"><br><br>
