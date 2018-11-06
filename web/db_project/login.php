@@ -7,7 +7,7 @@
    <title>Login</title>
 </head>
 <body>
-   <h1>WELCOME TO ASSIGN ME</h1>
+   <h1>WELCOME TO ASSIGN ME</h1><hr>
    <?php
       session_start();
       if(isset($_SESSION["login_error"]))
@@ -16,7 +16,7 @@
       }
       session_destroy();
    ?>
-   <hr><br><br><br>
+   <br><br><br>
    <form action="loginSubmission.php" method="POST">
       Username: <input type="text" name="username" required><br><br>
       Password: <input type="text" name="password" required><br><br>
