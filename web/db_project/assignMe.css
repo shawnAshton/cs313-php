@@ -1,6 +1,9 @@
 body{
    background-color: powderblue;
    text-align: center;
+}
+
+div{
    vertical-align: middle;
 }
 

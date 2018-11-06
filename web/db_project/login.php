@@ -15,11 +15,12 @@
    <title>Login</title>
 </head>
 <body>
-   <form action="loginSubmission.php" method="POST">
+
+   <div><form action="loginSubmission.php" method="POST">
       Username: <input type="text" name="username"><br><br>
       Password: <input type="text" name="password"><br>
       <input type="submit" name="submit" value="login">
-   </form>
+   </form></div>
    <a href="passwordInput.php">Create an Account</a>
 </body>
 </html>
