@@ -31,10 +31,10 @@ $db = get_db();
       var divTag = document.getElementById("textbox");
       divTag.appendChild(newTextBoxJob);
       divTag.appendChild(newTextBoxName);
-      divTag.insertBefore(document.createElement("BR"), button);
+      // divTag.insertBefore(document.createElement("BR"), button);
       divTag.insertBefore(newTextBoxName, button);
       divTag.insertBefore(newTextBoxJob, button);
-      divTag.insertBefore(document.createTextNode(" "), button);
+      // divTag.insertBefore(document.createTextNode(" "), button);
       divTag.insertBefore(document.createTextNode(" "), newTextBoxJob);
    }
 
@@ -58,7 +58,7 @@ $db = get_db();
       <h3>Add People Names and Jobs to rotate through</h3>
       <br/>
       <div id="textbox">
-         <input type="button" id="button" value="Add Person and Job box" onclick="addTextBoxes()"/>
+         <input type="button" id="button" value="Add Person and Job box" onclick="addTextBoxes()"/><br>
          <input type="text" name="names[]" id="input" placeholder="enter a name" required>
          <input type="text" name="jobs[]"  placeholder="enter a job" required>
          
