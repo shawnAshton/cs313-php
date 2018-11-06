@@ -83,7 +83,7 @@ CREATE A WAY TO PREVENT A PERSON FROM CREATING A PORJECT if they didnt log in...
 
 Make sure the number input is a number, not a string or something else.
 
-workers have a user.....when inserting a worker, check if there is already one by that name
+workers have a user.....when inserting a worker, check if there is already one by that name.. so don't create another
 
 comment all code nicely
 
