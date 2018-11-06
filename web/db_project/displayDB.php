@@ -1,9 +1,14 @@
 <?php
-session_start();
-// connect to db
-require('dbConnect.php');
-$db = get_db();
+   session_start();
+   // connect to db
+   require('dbConnect.php');
+   $db = get_db();
 
+   if(!isset($_SESSION["user"]))
+   {
+      $_SESSION["login_error"] = "You need to login before you can see your projects.<br><br>";
+      header('location:login.php');
+   }
    $username = $_SESSION["user"];
    $stmt = $db->prepare("SELECT p.title, p.id FROM project p
    JOIN program_user pu ON p.program_user_id = pu.id
@@ -55,7 +60,7 @@ $db = get_db();
 
 error messages appear when creating account and when not able to log in... session variables... !!!!!!!!!!!!!!!!CHECK!!!!!!!!!!!!!!!!!!!
 
-people cant have a project with the same name as another project.... or set it up so info is set up with id rather than project name..!!!!!!!!!!!!!!!CHECk!!!!!!!!!!!!!!!!!!!!
+people cant have a project with the same name as another project.... or set it up so info is set up with id rather than project name..!!!!!!!!!!!!!!!CHECK!!!!!!!!!!!!!!!!!!!!
 
 logout method...!!!!!!!!!!!!!!!!!!!CHECK!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -64,7 +69,7 @@ css!!!
 CREATE A REMOVE INPUT FUNCTION for name and box.
    button stays at top
 
-create a way to prevent the word "projects" from showing up when a user has no projects.
+create a way to prevent the word "projects" from showing up when a user has no projects. !!!!!!!!!!!!!!!!!!!!!!!!!!CHECK!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 CREATE A WAY TO DELETE A PROJECT... that will erase jobs and rows in the job_worker table as well as project...
 
