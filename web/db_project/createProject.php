@@ -47,7 +47,7 @@ $db = get_db();
 </head>
 <body>
    <form id = "nameForm" action="insertProject.php" method="POST">
-      <h1>Creating a New Project</h1>
+      <h1>Creating a New Project</h1><hr>
       <h2>Information:</h2>
       <p>Create a way to rotate jobs and people. For example if you are a college student, then you could rotate chores with your roomates.</p>
       <h3>Group name</h3>
@@ -58,9 +58,10 @@ $db = get_db();
       <h3>Add People Names and Jobs to rotate through</h3>
       <br/>
       <div id="textbox">
+         <input type="button" id="button" value="Add Person and Job box" onclick="addTextBoxes()"/>
          <input type="text" name="names[]" id="input" placeholder="enter a name" required>
          <input type="text" name="jobs[]"  placeholder="enter a job" required>
-         <input type="button" id="button" value="Add Person and Job box" onclick="addTextBoxes()"/>
+         
       </div>
       <input type="submit" value="Create Project">
    </form>
