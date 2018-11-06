@@ -15,12 +15,13 @@
    <title>Login</title>
 </head>
 <body>
-
-   <div><form action="loginSubmission.php" method="POST">
+   <h1>WELCOME TO ASSIGN ME</h1>
+   <br><br><br>
+   <form action="loginSubmission.php" method="POST">
       Username: <input type="text" name="username"><br><br>
       Password: <input type="text" name="password"><br>
       <input type="submit" name="submit" value="login">
    </form>
-   <a href="passwordInput.php">Create an Account</a></div>
+   <a href="passwordInput.php">Create an Account</a>
 </body>
 </html>

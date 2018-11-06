@@ -3,9 +3,6 @@ body{
    text-align: center;
 }
 
-div{
-   vertical-align: middle;
-}
 
 input[type="submit"]{
    border-style: solid;
