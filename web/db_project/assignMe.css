@@ -33,3 +33,7 @@ hr{
    border: 0;
    box-shadow: 0 10px 10px -10px inset;
 }
+
+ul{
+   list-style: none;
+}
