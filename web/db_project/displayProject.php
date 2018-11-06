@@ -1,5 +1,6 @@
 <?php
 // connect to db
+   session_start();
    require('dbConnect.php');
    if(!isset($_SESSION["user"]))
    {
