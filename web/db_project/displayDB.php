@@ -20,7 +20,7 @@ $db = get_db();
 </head>
 <body>
    <?php 
-   if(isset($projects))
+   if(count($projects) > 0)
    {
       echo "<h1>Projects</h1>";
    }
